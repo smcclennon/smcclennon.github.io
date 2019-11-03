@@ -1,4 +1,4 @@
 # smcclennon.github.io
 My GitHub Pages website about myself and my projects.
 
-<a href="smcclennon.github.io">Visit smcclennon.github.io</a>
+Go to <a href="https://smcclennon.github.io">smcclennon.github.io</a>
