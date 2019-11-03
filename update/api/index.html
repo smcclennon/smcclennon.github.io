@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="../../assets/css/cayman.css">
+<body data-gr-c-s-loaded="true">
+    
+        <header class="page-header" role="banner">
+          <h1 class="project-name">API</h1>
+          <h2 class="project-tagline">List of project API's</h2>
+          
+            <a href="../../index.html" class="btn">Home</a>
+            <a href="../../projects/index.html" class="btn">Projects</a>
+          
+        </header>
+<main id="content" class="main-content" role="main">
+<h2 id="header-2">About my API</h1>
+<p>I created a small API which consists of links to various GitHub API pages for the respective projects. Projects with update support will use this API to get the information they need to update (such as patch notes and a download link).</p>
+<p>Information within the API pages may seem to be in a rather strange order, and that is because it is. I cannot adjust the order, as this would break the update code on projects using this API.</p>
+<p>The API pages will appear to have all information on the same line, separated by spaces. This is due to how GitHub.io displays unformatted html.</p>
+
+<h3 id="header-3">API format</h1>
+<p>This is the information that goes on the respective (numbered) line</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>1. Latest release details [URL, Json]
+2. Project name [String]
+3. Latest release direct download link [URL, Json]
+4. 5 latest release details [URL, Json]
+</code></pre></div></div>
+
+<h3 id="header-3">Information use</h1>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>1. Display the latest version [e.g v1.2.3]
+2. Update the current project name [backwards compatibility]
+3. Download the latest release
+4. Display up to 5 previous release patch notes
+</code></pre></div></div>
+
+<h1 id="header-1">API List</h1>
+<p>List of my API-supported projects</p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">ID</th>
+      <th style="text-align: left">Project</th>
+      <th style="text-align: left">Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a target="_blank" rel="noopener noreferrer" href="1.html">1</a></td>
+      <td style="text-align: left"><a href="https://github.com/smcclennon/LTFO">LTFO</a></td>
+      <td style="text-align: left">Up to date</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a target="_blank" rel="noopener noreferrer" href="2.html">2</a></td>
+      <td style="text-align: left"><a href="https://github.com/smcclennon/SMN">SMN</a></td>
+      <td style="text-align: left">Outdated</td>
+    </tr>
+  </tbody>
+</table>
+    <footer class="site-footer">
+        
+        <span class="site-footer-credits">Visit my <a href="https://github.com/smcclennon">GitHub page</a></span>
+    </footer>
+    </main>
+
+
+</body>
