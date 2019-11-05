@@ -1,7 +1,6 @@
 author: Shiraz McClennon
 title: Shiraz McClennon
 description: Computer science student interested in cyber security
-url: "https://smcclennon.github.io"
 logo: assets/images/smcclennon.png
 lang: en_EU
 social:
@@ -11,5 +10,18 @@ social:
 show_downloads: true
 google_analytics: UA-151447933-1
 theme: jekyll-theme-cayman
+url: "https://smcclennon.github.io"
+defaults:
+  -
+    scope:
+      path: "update/api/1.html"
+    values:
+      sitemap:         false
+  -
+    scope:
+      path: "update/api/2.html"
+    values:
+      sitemap:         false
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
