@@ -10,7 +10,14 @@ social:
 show_downloads: true
 google_analytics: UA-151447933-1
 theme: jekyll-theme-cayman
+source: _pages
+include:
+  - _pages/robots.txt
+  - _pages/sitemap.xml
 url: "https://smcclennon.github.io"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 defaults:
   -
     scope:
@@ -22,6 +29,3 @@ defaults:
       path: "update/api/2.html"
     values:
       sitemap:         false
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
