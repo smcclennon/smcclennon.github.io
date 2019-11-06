@@ -1,6 +1,8 @@
 # Group 1
 User-agent: *
 Disallow: /update/api/1.html
+Disallow /update/api/1
 Disallow: /update/api/2.html
+Disallow /update/api/2
 
 Sitemap: https://smcclennon.github.io/sitemap.xml
