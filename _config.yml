@@ -10,7 +10,6 @@ social:
 google_analytics: UA-151447933-1
 theme: jekyll-theme-cayman
 source: _pages
-include: _pages
 url: "https://smcclennon.github.io"
 plugins:
   - jekyll-seo-tag
