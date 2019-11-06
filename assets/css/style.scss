@@ -12,3 +12,6 @@
   .main-content h5,
   .main-content h6 {
   color: #26a0da; }
+
+a:not(.btn):link, a:not(.btn):visited { color: #5d90a8; text-decoration: none; }
+a:not(.btn):hover { text-decoration: underline; }
