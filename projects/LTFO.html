@@ -13,7 +13,7 @@ b3: LTFO on GitHub
 b3_url: https://github.com/smcclennon/LTFO
 b3_property: newtab
 ---
-<h2 id="header-2">About LTFO</h2>
+<h2>About LTFO</h2>
 <p>LTFO was originally called Logout Reminder. I created the python script in early 2019, simply due to the majority of students leaving their sessions logged in on the college computers. Logout Reminder's goal was to not only remind the said students to logout, but make sure they wouldn't forget.</p>
 <p>I achieved this by creating a script that would generate a READ_ME.txt file in all folders on their student partition of the college server (which had its own drive letter).</p>
 <p>The READ_ME.txt files would have a random number in their filename so that removing the files was safe. The files would contain a message along the lines of:</p>
@@ -26,23 +26,26 @@ b3_property: newtab
 <p>The new rewrite of the script included many new features not present in the original version including:</p>
 <ul>
   <li>Ability to select a drive to flood with files (originally hard-coded within the script)</li>
-  <li>Ability to go back and fourth between menus</li>
+  <li>Ability to go back and forth between menus</li>
   <li>Final randomly-generated confirmation code to reduce accidents</li>
   <li>Generating an automatic removal script [Build 3, v2.0.0-v2.1.2]</li>
   <li>Automatically check for updates [v2.1.0-v2.1.3]</li>
 </ul>
-<h3 id="header-3">The name change</h3>
+<h3>The name change</h3>
 <p>Logout Reminder's project name was changed to LTFO [v3.0.0] with inspiration from <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a> on GitHub, who also contributed to the LTFO project by helping me learn about dictionaries, f-strings, and removing global variables from the code altogether.</p>
-<p>It was at this point that that LTFO began to recieve many more features including:</p>
+<p>It was at this point that that LTFO began to recieve many new features including:</p>
 <ul>
-  <li>Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2]</li>
-  <li>Custom messages completely replaced the contents of the flooded files [v4.0.0] *1</li>
-  <li>Introduced {variables} for all message types [v4.0.0] *2</li>
-  <li>Comments & formatting from <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a> *3</li>
+  <li>Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2] <a href="#*1">*1</a></li>
+  <li>Custom messages completely replaced the contents of the flooded files [v4.0.0] <a href="#*2">*2</a></li>
+  <li>Introduced {variables} for all message types [v4.0.0] <a href="#*3">*3</a></li>
+  <li>Comments & formatting from <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a><br/><i>It was at this point that I learnt how to use dictionaries and f-strings</i></li>
   <li>Custom file selection via a GUI or with the $path/to/file command [v5.0.0]</li>
 </ul>
 
-<h4 id="header-4">*1</h4>
+<h4 id="*1">*1</h4>
+<p>When changing Logout Reminder's project name to LTFO, I encountered a serious backwards compatibility issue where the update code in Logout Reminder would fail to update to LTFO</p>
+<p>It was because of LTFO that I created my API</p>
+<h4 id="*2">*2</h4>
 <p>Prior to v4.0.0, LTFO has treated custom messages as so:</p>
 <blockquote>
   <p>You forgot to logout!</p>
@@ -54,4 +57,12 @@ b3_property: newtab
 <blockquote>
   <p>This is an example of a custom message!</p>
   <p>Removal instructions: Search 'READ_ME#374.txt' in the root of your drive, select all, and delete.</p>
+</blockquote>
+<h4 id="*3">*3</h4>
+<p>Variables allowed for powerful automation with LTFO such as including the time, date, computer name and even the logged in username. These variables would allow for messages like this:</p>
+<blockquote>
+    <p>{username}, you forgot to logout of {computer} at {time} - {date}</p>
+  </blockquote>
+<blockquote>
+  <p>Dave, you forgot to logout of Computer-3 at 11:36 - 23.11.19</p>
 </blockquote>
