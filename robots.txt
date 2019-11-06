@@ -4,5 +4,7 @@ Disallow: /update/api/1.html
 Disallow /update/api/1
 Disallow: /update/api/2.html
 Disallow /update/api/2
+Disallow /update
+Disallow /update/index.html
 
 Sitemap: https://smcclennon.github.io/sitemap.xml

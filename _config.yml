@@ -24,3 +24,8 @@ defaults:
       path: "update/api/2.html"
     values:
       sitemap:         false
+  -
+    scope:
+      path: "update/index.html"
+    values:
+      sitemap:         false
