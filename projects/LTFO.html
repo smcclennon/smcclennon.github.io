@@ -13,6 +13,11 @@ b3: LTFO on GitHub
 b3_url: https://github.com/smcclennon/LTFO
 b3_property: newtab
 ---
+<style>
+
+</style>
+
+
 <h2 id="about">About LTFO</h2>
 <p>LTFO was originally called Logout Reminder. I created the python script in early 2019, simply due to the majority of students leaving their sessions logged in on the college computers. Logout Reminder's goal was to not only remind the said students to logout, but make sure they wouldn't forget.</p>
 <p>I achieved this by creating a script that would generate a READ_ME.txt file in all folders on their student partition of the college server (which had its own drive letter).</p>
@@ -35,34 +40,30 @@ b3_property: newtab
 <p>Logout Reminder's project name was changed to LTFO [v3.0.0] with inspiration from <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a> on GitHub, who also contributed to the LTFO project by helping me learn about dictionaries, f-strings, and removing global variables from the code altogether.</p>
 <p>It was at this point that that LTFO began to recieve many new features including:</p>
 <ul>
-  <li>Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2] <a href="#*1">*1</a></li>
-  <li>Custom messages completely replaced the contents of the flooded files [v4.0.0] <a href="#*2">*2</a></li>
-  <li>Introduced {variables} for all message types [v4.0.0] <a href="#*3">*3</a></li>
+  <li>Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2] <div class="dropdown"><div class="highlight"><span>[Learn more]</span></div><div class="dropdown-content">When changing Logout Reminder's project name to LTFO, I encountered a serious backwards compatibility issue where the update code in Logout Reminder would fail to update to LTFO<br/>This was why I created my API</div></li>
+  <li>Custom messages completely replaced the contents of the flooded files [v4.0.0] <div class="dropdown"><div class="highlight"><span>[Learn more]</span></div><div class="dropdown-content">
+      <p>Prior to v4.0.0, LTFO has treated custom messages as so:</p>
+      <blockquote>
+        <p>You forgot to logout!</p>
+        <p>Custom message:<br/>
+        This is an example of a custom message!</p>
+        <p>Removal instructions: Search 'READ_ME#374.txt' in the root of your drive, select all, and delete.</p>
+      </blockquote>
+      <p>With v4.0.0, LTFO treated custom messages as so:</p>
+      <blockquote>
+        <p>This is an example of a custom message!</p>
+        <p>Removal instructions: Search 'READ_ME#374.txt' in the root of your drive, select all, and delete.</p>
+      </blockquote>
+  </div></li>
+  <li>Introduced {variables} for all message types [v4.0.0] <div class="dropdown"><div class="highlight"><span>[Learn more]</span></div><div class="dropdown-content">
+      <p>Variables allowed for powerful automation with LTFO such as including the time, date, computer name and even the logged in username. These variables would allow for messages like this:</p>
+      <blockquote>
+          <p>{username}, you forgot to logout of {computer} at {time} - {date}</p>
+        </blockquote>
+      <blockquote>
+        <p>Dave, you forgot to logout of Computer-3 at 11:36 - 23.11.19</p>
+      </blockquote>
+  </div></li>
   <li>Comments & formatting from <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a><br/><i>It was at this point that I learnt how to use dictionaries and f-strings</i></li>
   <li>Custom file selection via a GUI or with the $path/to/file command [v5.0.0]</li>
 </ul>
-
-<h4 id="*1">*1</h4>
-<p>When changing Logout Reminder's project name to LTFO, I encountered a serious backwards compatibility issue where the update code in Logout Reminder would fail to update to LTFO</p>
-<p>It was because of LTFO that I created my API</p>
-<h4 id="*2">*2</h4>
-<p>Prior to v4.0.0, LTFO has treated custom messages as so:</p>
-<blockquote>
-  <p>You forgot to logout!</p>
-  <p>Custom message:<br/>
-  This is an example of a custom message!</p>
-  <p>Removal instructions: Search 'READ_ME#374.txt' in the root of your drive, select all, and delete.</p>
-</blockquote>
-<p>With v4.0.0, LTFO treated custom messages as so:</p>
-<blockquote>
-  <p>This is an example of a custom message!</p>
-  <p>Removal instructions: Search 'READ_ME#374.txt' in the root of your drive, select all, and delete.</p>
-</blockquote>
-<h4 id="*3">*3</h4>
-<p>Variables allowed for powerful automation with LTFO such as including the time, date, computer name and even the logged in username. These variables would allow for messages like this:</p>
-<blockquote>
-    <p>{username}, you forgot to logout of {computer} at {time} - {date}</p>
-  </blockquote>
-<blockquote>
-  <p>Dave, you forgot to logout of Computer-3 at 11:36 - 23.11.19</p>
-</blockquote>
