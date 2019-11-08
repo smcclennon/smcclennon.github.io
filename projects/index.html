@@ -8,114 +8,27 @@ b1_url: ../
 
 b2: API
 b2_url: ../update/api
+
+script1: LoadCSS
+script2: ifTouchscreen
 ---
-
-
-<style>
-/*@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);*/
-figure.snip1321 {
-  /*font-family: 'Raleway', Arial, sans-serif;*/
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 10%;
-  color: #000000;
-  -webkit-perspective: 50em;
-  perspective: 50em;
-  display: inline-block;
-  text-align: center;
-}
-figure.snip1321 * {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box; /*Text animation*/
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-figure.snip1321 img {
-  max-width: 100%;
-  vertical-align: center;
-}
-figure.snip1321 figcaption {
-  top: 50%;
-  left: 20px;
-  right: 20px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
-}
-figure.snip1321 h2,
-figure.snip1321 h4 {
-  margin: 0;
-}
-figure.snip1321 h2 {
-  font-weight: 600;
-}
-figure.snip1321 h4 {
-  font-weight: 400;
-  text-transform: uppercase;
-}
-figure.snip1321 i {
-  font-size: 32px;
-}
-figure.snip1321:after {
-  background-color: #ffffff;
-  position: absolute;
-  content: "";
-  display: block;
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: rotateX(-90deg);
-  transform: rotateX(-90deg);
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  opacity: 0;
-}
-figure.snip1321 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-}
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  opacity: 1;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
-  -webkit-transform: rotateX(0);
-  transform: rotateX(0);
-  opacity: 0.9;
-}
-</style>
-
+<script>
+ifTouchscreen(() => LoadCSS('../assets/css/portfolio-static.css'), () => LoadCSS('../assets/css/portfolio-animated.css'))
+</script>
 
 
 <!--https://codepen.io/littlesnippets/pen/adLELd-->
 <!-- ion-upload ion-status-bars -->
 <div style='text-align:center'>
   <h3>Project pages are under development</h3>
-  <figure class="snip1321 hover"><img src="../assets/images/LTFO-square.png" alt="LTFO"/>
+  <figure class="snip1321"><img src="../assets/images/LTFO-square.png" alt="LTFO"/>
     <figcaption><img src="../assets/images/Python Icon.png"/>
       <h2>LTFO</h2>
       <h4>Log TF Out</h4>
     </figcaption><a href="LTFO"></a>
   </figure>
   <!--<figure class="snip1321 hover">-->
-  <figure class="snip1321 hover"><img src="../assets/images/SMN-square.png" alt="SMN"/>
+  <figure class="snip1321"><img src="../assets/images/SMN-square.png" alt="SMN"/>
     <figcaption><img src="../assets/images/Python Icon.png"/>
       <h2>SMN</h2>
       <h4>Scan Me Now</h4>
