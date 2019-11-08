@@ -12,6 +12,8 @@ b2_url: ../projects
 b3: LTFO on GitHub
 b3_url: https://github.com/smcclennon/LTFO
 b3_property: newtab
+
+script1: togglediv
 ---
 
 
@@ -38,7 +40,7 @@ b3_property: newtab
 <p>Logout Reminder's project name was changed to LTFO [v3.0.0] with inspiration from <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a> on GitHub, who also contributed to the LTFO project by helping me learn about dictionaries, f-strings, and removing global variables from the code altogether.</p>
 <p>It was at this point that that LTFO began to recieve many new features including:</p>
 <ul>
-  <li>Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2] <div class="highlight"><span onclick="togglediv('lm-1')">[Learn more]</span></div><div class="spoiler" id="lm-1">When changing Logout Reminder's project name to LTFO, I encountered a serious backwards compatibility issue where the update code in Logout Reminder would fail to update to LTFO<br/>This was why I created my API</div></li>
+  <li>Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2] <div class="highlight"><span onclick="togglediv('lm-1')">[Learn more]</span></div><div class="spoiler" id="lm-1">When changing Logout Reminder's project name to LTFO, I encountered a serious backwards compatibility issue where the update code in Logout Reminder would fail to update to LTFO<br/>This was why I created my <a href="../update/api/index.html">API</a></div></li>
   <li>Custom messages completely replaced the contents of the flooded files [v4.0.0] <div class="highlight"><span onclick="togglediv('lm-2')">[Learn more]</span></div><div class="spoiler" id="lm-2">
       <p>Prior to v4.0.0, LTFO has treated custom messages as so:</p>
       <blockquote>
@@ -67,8 +69,3 @@ b3_property: newtab
 </ul>
 
 
-<script>
-function togglediv(id) {
-    var div = document.getElementById(id);
-    div.style.display = div.style.display == "block" ? "none" : "block";
-}</script>

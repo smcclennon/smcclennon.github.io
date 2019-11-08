@@ -20,6 +20,15 @@
     <meta name="description" content="{{ page.subtitle }}">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% if page.script1 %}
+      <script src="../../assets/js/{{ page.script1 }}.js"></script>
+    {% endif %}
+    {% if page.script2 %}
+      <script src="../../assets/js/{{ page.script2 }}.js"></script>
+      {% endif %}
+    {% if page.script3 %}
+      <script src="../../assets/js/{{ page.script3 }}.js"></script>
+      {% endif %}
     <link rel="shortcut icon" type="image/png" href="{{ root_url }}/{{ site.logo }}">
   </head>
   <body>
