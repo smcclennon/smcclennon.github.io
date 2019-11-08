@@ -1,23 +1,20 @@
 // https://stackoverflow.com/questions/574944
-function LoadCSS( cssURL ) {
-
+function LoadCSS(cssURL) {
   // 'cssURL' is the stylesheet's URL, i.e. /css/styles.css
 
-  return new Promise( function( resolve, reject ) {
+  return new Promise(function(resolve, reject) {
+    var link = document.createElement("link");
 
-      var link = document.createElement( 'link' );
+    link.rel = "stylesheet";
 
-      link.rel  = 'stylesheet';
+    link.href = cssURL;
 
-      link.href = cssURL;
+    document.head.appendChild(link);
 
-      document.head.appendChild( link );
+    link.onload = function() {
+      resolve();
 
-      link.onload = function() { 
-
-          resolve(); 
-
-          console.log( 'CSS has loaded!' ); 
-      };
-  } );
+      console.log("CSS has loaded!");
+    };
+  });
 }
