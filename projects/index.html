@@ -9,22 +9,6 @@ b1_url: ../
 b2: API
 b2_url: ../update/api
 ---
-<script type="text/javascript">
-  /*
-  * https://stackoverflow.com/questions/6666907
-  * Disable animations if device is a touch device
-  */
-  function touchSupport() {
-      if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
-          // Hide animations for touch devices
-          {% assign viewType='snip1321 hover' %}
-      } else {
-        {% assign viewType='snip1321' %}
-      }
-  }
-  //run once the page has fully loaded
-  window.onload = touchSupport;
-</script>
 
 
 <style>
@@ -124,14 +108,14 @@ figure.snip1321.hover:after {
 <!-- ion-upload ion-status-bars -->
 <div style='text-align:center'>
   <h3>Project pages are under development</h3>
-  <figure class="{{ viewType }}"><img src="../assets/images/LTFO-square.png" alt="LTFO"/>
+  <figure class="snip1321 hover"><img src="../assets/images/LTFO-square.png" alt="LTFO"/>
     <figcaption><img src="../assets/images/Python Icon.png"/>
       <h2>LTFO</h2>
       <h4>Log TF Out</h4>
     </figcaption><a href="LTFO"></a>
   </figure>
   <!--<figure class="snip1321 hover">-->
-  <figure class="{{ viewType }}"><img src="../assets/images/SMN-square.png" alt="SMN"/>
+  <figure class="snip1321 hover"><img src="../assets/images/SMN-square.png" alt="SMN"/>
     <figcaption><img src="../assets/images/Python Icon.png"/>
       <h2>SMN</h2>
       <h4>Scan Me Now</h4>
