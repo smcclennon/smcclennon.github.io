@@ -16,7 +16,7 @@ for (let i = 0, l = images.length; i < l; i++) {
 NProgress.start();
 console.log('Page loading...');
 window.onload = function() {
-  //NProgress.inc();
+  document.getElementById('loadOverlay').style.display = 'none';
   NProgress.done();
   console.log('Page load complete!');
 };
