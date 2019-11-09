@@ -14,6 +14,7 @@ script2: ifTouchscreen
 ---
 
 <script>
+  LoadCSS("../assets/css/portfolio-base.css");
   ifTouchscreen(
     () => LoadCSS("../assets/css/portfolio-static.css"),
     () => LoadCSS("../assets/css/portfolio-animated.css")
