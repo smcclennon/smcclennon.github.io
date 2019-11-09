@@ -24,8 +24,6 @@
     <link rel="stylesheet" href="{{ root_url }}/assets/css/nprogress.css">
 
     <script src="{{ root_url }}/assets/js/jquery-3.4.1.min.js"></script>
-    <script src="{{ root_url }}/assets/js/pjax.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="{{ root_url }}/assets/js/nprogress.js"></script>
 
     {% if page.script1 %}
@@ -43,7 +41,6 @@
     <link rel="shortcut icon" type="image/png" href="{{ root_url }}/{{ site.logo }}">
   </head>
   <body>
-    <script src="{{ root_url }}/assets/js/loadProgress.js"></script>
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.subtitle | default: site.description | default: site.github.project_tagline }}</h2>
@@ -97,3 +94,4 @@
     </main>
   </body>
 </html>
+<script src="{{ root_url }}/assets/js/loadProgress.js"></script>
