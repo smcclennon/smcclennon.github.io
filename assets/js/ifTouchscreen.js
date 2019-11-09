@@ -7,9 +7,12 @@ function ifTouchscreen(isTouchscreen, notTouchscreen) {
     )
   ) {
     isTouchscreen();
+    console.log("Touchscreen device detected");
   } else if (window.matchMedia("(pointer: coarse)").matches) {
     isTouchScreen();
+    console.log("Touchscreen device detected");
   } else {
     notTouchscreen();
+    console.log("Non-touchscreen device detected");
   }
 }

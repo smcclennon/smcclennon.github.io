@@ -14,7 +14,7 @@ function LoadCSS(cssURL) {
     link.onload = function() {
       resolve();
 
-      console.log("CSS has loaded!");
+      console.log(cssURL+" has loaded");
     };
   });
 }

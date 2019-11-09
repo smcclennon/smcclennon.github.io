@@ -14,19 +14,23 @@ script2: ifTouchscreen
 ---
 
 <script>
-  LoadCSS("../assets/css/portfolio-base.css");
+  LoadCSS('../assets/css/portfolio-base.css');
   ifTouchscreen(
-    () => LoadCSS("../assets/css/portfolio-static.css"),
-    () => LoadCSS("../assets/css/portfolio-animated.css")
+    () => LoadCSS('../assets/css/portfolio-static.css'),
+    () => LoadCSS('../assets/css/portfolio-animated.css')
   );
 </script>
-
 <!--https://codepen.io/littlesnippets/pen/adLELd-->
 <!-- ion-upload ion-status-bars -->
-<div style="text-align:center">
+<div style="text-align:center" class="images" id="images">
   <h3>Project pages are under development</h3>
   <figure class="snip1321">
-    <img src="../assets/images/LTFO-square.png" alt="LTFO" />
+    <!--<img src="../assets/images/LTFO-square.png" alt="LTFO" />-->
+    <img
+      src="https://wallpapers.gg/wp-content/uploads/2018/01/Old-Lion-4K.jpg"
+      alt="LTFO"
+      id='image'
+    />
     <figcaption>
       <img src="../assets/images/Python Icon.png" />
       <h2>LTFO</h2>
@@ -36,7 +40,8 @@ script2: ifTouchscreen
   </figure>
   <!--<figure class="snip1321 hover">-->
   <figure class="snip1321">
-    <img src="../assets/images/SMN-square.png" alt="SMN" />
+    <!--<img src="../assets/images/SMN-square.png" alt="SMN" />-->
+    <img src="https://images7.alphacoders.com/383/383230.jpg" alt="SMN" id="image" />
     <figcaption>
       <img src="../assets/images/Python Icon.png" />
       <h2>SMN</h2>
@@ -53,3 +58,4 @@ script2: ifTouchscreen
   </figure>
   -->
 </div>
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-EU" }}">
   <head>
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -19,20 +19,31 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="description" content="{{ page.subtitle }}">
     <title>{{ page.title }} - {{ site.title }}</title>
+
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ root_url }}/assets/css/nprogress.css">
+
+    <script src="{{ root_url }}/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="{{ root_url }}/assets/js/pjax.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ root_url }}/assets/js/nprogress.js"></script>
+
     {% if page.script1 %}
-      <script src="../../assets/js/{{ page.script1 }}.js"></script>
-    {% endif %}
+      <script src="{{ root_url }}/assets/js/{{ page.script1 }}.js"></script>
+      {% endif %}
     {% if page.script2 %}
-      <script src="../../assets/js/{{ page.script2 }}.js"></script>
+      <script src="{{ root_url }}/assets/js/{{ page.script2 }}.js"></script>
       {% endif %}
     {% if page.script3 %}
-      <script src="../../assets/js/{{ page.script3 }}.js"></script>
+      <script src="{{ root_url }}/assets/js/{{ page.script3 }}.js"></script>
+      {% endif %}
+    {% if page.script4 %}
+      <script src="{{ root_url }}/assets/js/{{ page.script4 }}.js"></script>
       {% endif %}
     <link rel="shortcut icon" type="image/png" href="{{ root_url }}/{{ site.logo }}">
   </head>
   <body>
-
+    <script src="{{ root_url }}/assets/js/loadProgress.js"></script>
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.subtitle | default: site.description | default: site.github.project_tagline }}</h2>
@@ -77,10 +88,9 @@
         {% endif %}
       {% endif %}
     </header>
-
+    <div class="progress" id="progress"></div>
     <main id="content" class="main-content" role="main">
       {{ content }}
-
       <footer class="site-footer">
         <span class="site-footer-credits">Visit my <a href="https://github.com/smcclennon">GitHub page</a></span>
       </footer>
