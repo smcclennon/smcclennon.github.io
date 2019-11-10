@@ -13,16 +13,31 @@ b3: LTFO on GitHub
 b3_url: https://github.com/smcclennon/LTFO
 b3_property: newtab
 
-script1: togglediv
+b4: Download LTFO
+b4_url: https://github.com/smcclennon/LTFO/releases/latest/download/LTFO.py
+
+script1: toggleDiv
 ---
 
+
 <h2 id="about">About LTFO</h2>
-<p>
-  LTFO was originally called Logout Reminder. I created the python script in
+
+<p><div style="display: inline;">
+  LTFO was originally named <div class="highlight"><span onclick="toggleDiv('logRem-logo')"
+    >Logout Reminder</span></div>. I created the python script in
   early 2019, simply due to the majority of students leaving their sessions
   logged in on the college computers. Logout Reminder's goal was to not only
   remind the said students to logout, but make sure they wouldn't forget.
-</p>
+</div></p>
+<div class="spoiler" id="logRem-logo" style=" padding: 0%;">
+<pre><code> _                             _     _____                _           _
+| |                           | |   |  __ \              (_)         | |
+| |     ___   __ _  ___  _   _| |_  | |__) |___ _ __ ___  _ _ __   __| | ___ _ __
+| |    / _ \ / _` |/ _ \| | | | __| |  _  // _ \ '_ ` _ \| | '_ \ / _` |/ _ \ '__|
+| |___| (_) | (_| | (_) | |_| | |_  | | \ \  __/ | | | | | | | | | (_| |  __/ |
+|______\___/ \__, |\___/ \__,_|\__| |_|  \_\___|_| |_| |_|_|_| |_|\__,_|\___|_|
+              __/ |
+             |___/</code></pre></div>
 <p>
   I achieved this by creating a script that would generate a READ_ME.txt file in
   all folders on their student partition of the college server (which had its
@@ -60,34 +75,38 @@ script1: togglediv
   </li>
   <li>Ability to go back and forth between menus</li>
   <li>Final randomly-generated confirmation code to reduce accidents</li>
-  <li>Generating an automatic removal script [Build 3, v2.0.0-v2.1.2]</li>
-  <li>Automatically check for updates [v2.1.0-v2.1.3]</li>
+  <li>Generating an automatic removal script [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/build-3">Build 3</a> - <a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v2.1.2">v2.1.2</a>]</li>
+  <li>Automatically check for updates [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v2.1.0">v2.1.0</a> - <a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v2.1.3">v2.1.3</a>]</li>
 </ul>
 <h3 id="name-change">The name change</h3>
-<p>
-  Logout Reminder's project name was changed to LTFO [v3.0.0] with inspiration
-  from
-  <a
-    target="_blank"
-    rel="noopener noreferrer"
-    href="https://github.com/leoriviera"
-    >Louis Riviera</a
-  >
+<p><div style="display: inline;">
+  Logout Reminder's project name was changed to
+  <div class="highlight"><span onclick="toggleDiv('ltfo-logo')"
+    >LTFO</span></div>
+  [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v3.0.0">v3.0.0</a>] with inspiration from
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a>
   on GitHub, who also contributed to the LTFO project by helping me learn about
   dictionaries, f-strings, and removing global variables from the code
   altogether.
-</p>
+</div></p>
+<div class="spoiler" id="ltfo-logo" style="text-align: center; padding: 0%;">
+    <pre><code>██╗  ████████╗███████╗ ██████╗ 
+██║  ╚══██╔══╝██╔════╝██╔═══██╗
+██║     ██║   █████╗  ██║   ██║
+██║     ██║   ██╔══╝  ██║   ██║
+███████╗██║   ██║     ╚██████╔╝
+╚══════╝╚═╝   ╚═╝      ╚═════╝ </code></pre></div>
 <p>
   It was at this point that that LTFO began to recieve many new features
   including:
 </p>
 <ul>
   <li>
-    Using my <a href="../update/api/index.html">internal API</a> [v3.0.1-v3.0.2]
+    Using my <a href="../update/api/index.html">internal API</a> [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v3.0.1">v3.0.1</a> - <a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v3.0.2">v3.0.2</a>]
     <div class="highlight">
-      <span onclick="togglediv('lm-1')">[Learn more]</span>
+      <span onclick="toggleDiv('lm-api')">[Learn more]</span>
     </div>
-    <div class="spoiler" id="lm-1">
+    <div class="spoiler" id="lm-api">
       When changing Logout Reminder's project name to LTFO, I encountered a
       serious backwards compatibility issue where the update code in Logout
       Reminder would fail to update to LTFO<br />This was why I created my
@@ -96,11 +115,11 @@ script1: togglediv
   </li>
   <li>
     Custom messages completely replaced the contents of the flooded files
-    [v4.0.0]
+    [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v4.0.0">v4.0.0</a>]
     <div class="highlight">
-      <span onclick="togglediv('lm-2')">[Learn more]</span>
+      <span onclick="toggleDiv('lm-cMsg')">[Learn more]</span>
     </div>
-    <div class="spoiler" id="lm-2">
+    <div class="spoiler" id="lm-cMsg">
       <p>Prior to v4.0.0, LTFO has treated custom messages as so:</p>
       <blockquote>
         <p>You forgot to logout!</p>
@@ -124,11 +143,11 @@ script1: togglediv
     </div>
   </li>
   <li>
-    Introduced {variables} for all message types [v4.0.0]
+    Introduced {variables} for all message types [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v4.0.0">v4.0.0</a>]
     <div class="highlight">
-      <span onclick="togglediv('lm-3')">[Learn more]</span>
+      <span onclick="toggleDiv('lm-vars')">[Learn more]</span>
     </div>
-    <div class="spoiler" id="lm-3">
+    <div class="spoiler" id="lm-vars">
       <p>
         Variables allowed for powerful automation with LTFO such as including
         the time, date, computer name and even the logged in username. These
@@ -155,6 +174,6 @@ script1: togglediv
     >
   </li>
   <li>
-    Custom file selection via a GUI or with the $path/to/file command [v5.0.0]
+    Custom file selection via a GUI or with the $path/to/file command [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v5.0.0">v5.0.0</a>]
   </li>
 </ul>
