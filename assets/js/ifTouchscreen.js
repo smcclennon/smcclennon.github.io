@@ -9,15 +9,16 @@ function ifTouchscreen(isTouchscreen, notTouchscreen) {
     notTouchscreen();
     console.log('Non-touchscreen device detected');
   }
+
   if (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     )
   ) {
     touchCmds();
-  } else if (window.matchMedia('(pointer: coarse)').matches) {
-    touchCmds();
   } else if ('ontouchstart' in window || navigator.msMaxTouchPoints) {
+    touchCmds();
+  } else if (window.matchMedia('(pointer: coarse)').matches) {
     touchCmds();
   } else {
     nonTouchCmds();

@@ -3,18 +3,18 @@
 
 @import 'jekyll-theme-cayman';
 :root {
-  --grad-left: #314755;
-  --grad-right: #26a0da;
-  --header-colour: #26a0da;
+  --grad-dark: #314755;
+  --grad-light: #26a0da;
+  --header-colour: var(--grad-light);
   --link-colour: #5d90a8;
 }
 
 .page-header {
-  background-color: var(--grad-right);
+  background-color: var(--grad-light);
   background-image: linear-gradient(
     120deg,
-    var(--grad-left),
-    var(--grad-right)
+    var(--grad-dark),
+    var(--grad-light)
   );
 }
 .main-content h1,
@@ -63,4 +63,81 @@ a:not(.btn):hover {
   margin: 10px;
   max-width: 100%;
   height: auto;
+}
+
+/*
+======================================================================
+
+======================================================================
+*/
+
+#nprogress {
+  pointer-events: none;
+}
+#nprogress .bar {
+  background: var(--grad-light);
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+}
+#nprogress .bar,
+.progressBar {
+  //progressBar div location target
+  width: 100%;
+  height: 2px;
+}
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px var(--grad-dark), 0 0 5px var(--grad-dark);
+  opacity: 1;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-top-color: var(--grad-light);
+  border-left-color: var(--grad-light);
+  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

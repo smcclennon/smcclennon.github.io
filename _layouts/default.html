@@ -21,7 +21,6 @@
     <title>{{ page.title }} - {{ site.title }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ root_url }}/assets/css/nprogress.css">
 
     <script src="{{ root_url }}/assets/js/jquery-3.4.1.min.js"></script>
     <script src="{{ root_url }}/assets/js/nprogress.js"></script>
@@ -85,7 +84,8 @@
         {% endif %}
       {% endif %}
     </header>
-    <div class="progress" id="progress"></div>
+    <div id="progressBar" class="progressBar"></div>
+    <script src="{{ root_url }}/assets/js/loadProgress.js"></script>
     <main id="content" class="main-content" role="main">
         <div
         id="loadOverlay"
@@ -98,4 +98,4 @@
     </main>
   </body>
 </html>
-<script src="{{ root_url }}/assets/js/loadProgress.js"></script>
+<script src="{{ root_url }}/assets/js/imageLoadDetection.js"></script>
