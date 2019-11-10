@@ -84,7 +84,7 @@ script1: toggleDiv
   <div class="highlight"><span onclick="toggleDiv('ltfo-logo')"
     >LTFO</span></div>
   [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v3.0.0">v3.0.0</a>] with inspiration from
-  <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Louis Riviera</a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Leo Riviera</a>
   on GitHub, who also contributed to the LTFO project by helping me learn about
   dictionaries, f-strings, and removing global variables from the code
   altogether.
@@ -163,13 +163,8 @@ script1: toggleDiv
   </li>
   <li>
     Comments & formatting from
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://github.com/leoriviera"
-      >Louis Riviera</a
-    ><br /><i
-      >It was at this point that I learnt how to use dictionaries and
+    <a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Leo Riviera</a>
+    <br /><i>It was at this point that I learnt how to use dictionaries and
       f-strings</i
     >
   </li>
@@ -177,3 +172,84 @@ script1: toggleDiv
     Custom file selection via a GUI or with the $path/to/file command [<a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO/releases/tag/v5.0.0">v5.0.0</a>]
   </li>
 </ul>
+
+<h1>So, what can it do?</h1>
+<p>LTFO is essentially a python script that duplicates a file into all subdirectories on the specified drive.</p>
+<p>It has however, evolved into much more than just a tool to remind colleagues to logout. It was designed to be eye-catching and hence generates files in all sub-directories (you can't really miss it!). This means that by creating a text document with a note inside it (into all sub-directories on a drive you have access to), LTFO can just about remind anyone about anything.</p>
+
+<h3>What users have to say</h3>
+<blockquote>"The removal script was a nice touch" <i>-Ross</i></blockquote>
+<blockquote>"Bomb ass coder. Work on your commenting tho" <i>-<a target="_blank" rel="noopener noreferrer" href="https://github.com/leoriviera">Leo Riviera</a></i></blockquote>
+<blockquote>"Of course you would make something like this" <i>-Anonymous</i></blockquote>
+<blockquote>"I don't trust your code" <i>-Anonymous</i></blockquote>
+
+<h2>Features</h2>
+<ul>
+  <li>Automatic updates</li>
+  <li>Copy/generate a file in subdirectories on a specific drive</li>
+  <li>Contents of generated files are completely customisable!</li>
+  <li>Custom variables such as {computer} and {username} which can be used in generated files</li>
+  <li>GUI file picker for selecting a file to copy</li>
+  <li>$path/to/file function for automation</li>
+  <li>Select a drive to flood with randomly generated files</li>
+  <li>Final randomly-generated confirmation code to prevent accidents</li>
+  <li>Generate removal/cleanup script to automatically remove all files generated</li>
+</ul>
+<h3>Installation</h3>
+<p>The script is designed to be ran from a USB drive, but you can also download the latest release directly onto the target machine.</p>
+
+<h3>Requirements</h3>
+<ul>
+  <li>Python 3.5+ <div class="highlight"><span onclick="toggleDiv('lm-usbReq')">[Learn more]</span></div></li>
+  <div class="spoiler" id="lm-usbReq">If you are planning to use a python install from the USB, please create a shortcut to run the script using Python on the flash drive.</div>
+  <li>Windows</li>
+</ul>
+<h2>Screenshots</h2>
+<style>
+  /* https://w3bits.com/css-image-hover-zoom/ */
+  /* The Image container */
+.img-hover-zoom {
+  width: auto;
+  height: auto;
+   /* Modify this according to your need */
+  overflow: hidden; /* Removing this will break the effects */
+}
+/* Point-zoom Container */
+.point-zoom img {
+  display: block !important;
+  transform-origin: 0% 0%;
+  transition: transform 1s, filter .5s ease-out;
+}
+
+/* The Transformation */
+.h15:hover img {
+  transform: scale(1.5);
+}
+.h16:hover img {
+  transform: scale(1.7);
+}
+.h17:hover img {
+  transform: scale(1.7);
+}
+.h19:hover img {
+  transform: scale(1.9);
+}
+  </style>
+{% assign image_folder = "../assets/images/screenshots/LTFO" %}
+<div class="img-hover-zoom point-zoom h17">
+  <img src="{{image_folder}}/Create message.png" style="transform-origin: 0% 0%;" /></div>
+<div class="img-hover-zoom point-zoom h19">
+  <img src="{{image_folder}}/Confirm all.png" style="transform-origin: 0% 50%;" /></div>
+<div class="img-hover-zoom point-zoom h16">
+  <img src="{{image_folder}}/File generation.png" style="transform-origin: 0% 15%;" /></div>
+<div class="img-hover-zoom point-zoom h16">
+  <img src="{{image_folder}}/Removal Tool.png" style="transform-origin: 0% 0%;" /></div>
+<div style="text-align: center;"><h3></h3><div class="highlight"><span onclick="toggleDiv('moreScreenshots')"><h3>[View more screenshots]</span></h3></div></div>
+<div class="spoiler" id="moreScreenshots" style="padding: 0%; background-color: transparent;">
+  <div class="img-hover-zoom point-zoom h15">
+    <img src="{{image_folder}}/Document contents.png" style="transform-origin: 0% 0%;" /></div>
+  <div class="img-hover-zoom point-zoom h15">
+    <img src="{{image_folder}}/File explorer.png" style="transform-origin: 0% 100%;" /></div>
+</div>
+<hr>
+<i>This script was written and tested using <b>Python 3.7</b> on <b>Windows 10</b> and may not function as intended using different versions of Python or Windows.</i>
