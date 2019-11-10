@@ -1,4 +1,4 @@
 # smcclennon.github.io
-My GitHub Pages website about myself and my projects.
+GitHub pages website about my projects which also hosts my update API
 
-Go to <a href="https://smcclennon.github.io">smcclennon.github.io</a>
+View it <a href="https://smcclennon.github.io">here</a>
