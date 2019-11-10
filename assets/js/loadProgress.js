@@ -6,9 +6,9 @@ NProgress.configure({
 });
 
 NProgress.start();
-console.log('Page Load: Started...');
+console.log('==== Loading content... ====');
 window.onload = function() {
   document.getElementById('loadOverlay').style.display = 'none';
   NProgress.done();
-  console.log('Page Load: Complete');
+  console.log('==== Content loaded ====');
 };
