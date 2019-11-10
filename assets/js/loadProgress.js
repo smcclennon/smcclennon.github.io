@@ -10,5 +10,5 @@ console.log('==== Loading content... ====');
 window.onload = function() {
   document.getElementById('loadOverlay').style.display = 'none';
   NProgress.done();
-  console.log('==== Content loaded ====');
+  console.log('==== Content loading complete ====');
 };
