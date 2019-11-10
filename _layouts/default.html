@@ -27,15 +27,19 @@
 
     {% if page.script1 %}
       <script src="{{ root_url }}/assets/js/{{ page.script1 }}.js"></script>
+      <script>console.log('Script loaded: {{ page.script1 }}');</script>
       {% endif %}
     {% if page.script2 %}
       <script src="{{ root_url }}/assets/js/{{ page.script2 }}.js"></script>
+      <script>console.log('Script loaded: {{ page.script2 }}');</script>
       {% endif %}
     {% if page.script3 %}
       <script src="{{ root_url }}/assets/js/{{ page.script3 }}.js"></script>
+      <script>console.log('Script loaded: {{ page.script3 }}');</script>
       {% endif %}
     {% if page.script4 %}
       <script src="{{ root_url }}/assets/js/{{ page.script4 }}.js"></script>
+      <script>console.log('Script loaded: {{ page.script4 }}');</script>
       {% endif %}
     <link rel="shortcut icon" type="image/png" href="{{ root_url }}/{{ site.logo }}">
   </head>
