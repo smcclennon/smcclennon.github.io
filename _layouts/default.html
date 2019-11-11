@@ -44,7 +44,7 @@
     <link rel="shortcut icon" type="image/png" href="{{ root_url }}/{{ site.logo }}">
   </head>
   <body>
-    <header class="page-header" role="banner">
+    <header class="page-header" id="top" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.subtitle | default: site.description | default: site.github.project_tagline }}</h2>
 
@@ -91,14 +91,11 @@
     <div id="progressBar" class="progressBar"></div>
     <script src="{{ root_url }}/assets/js/loadProgress.js"></script>
     <main id="content" class="main-content" role="main">
-        <div
-        id="loadOverlay"
-        style="background-color:#fff; position:absolute;/* top:0px;*/ left:0px; width:100%; height:1000%; z-index:10; overflow-y: hidden !important;"
-      ></div>
+      <div id="all-content" style="display: none;">
       {{ content }}
       <footer class="site-footer">
-        <span class="site-footer-credits">Visit my <a href="https://github.com/smcclennon">GitHub page</a></span>
-      </footer>
+        <span class="site-footer-credits"><div style="text-align: left; display: inline-block">Visit my <a href="https://github.com/smcclennon">GitHub page</a></div><div style="float:right !important; display: inline-block;">Go <a href="#top">back to the top</a></div></span>
+      </footer></div>
     </main>
   </body>
 </html>

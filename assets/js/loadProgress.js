@@ -8,7 +8,7 @@ NProgress.configure({
 NProgress.start();
 console.log('==== Loading content... ====');
 window.onload = function() {
-  document.getElementById('loadOverlay').style.display = 'none';
+  document.getElementById('all-content').style.display = 'block';
   NProgress.done();
   console.log('==== Content loading complete ====');
 };

@@ -238,18 +238,22 @@ script1: toggleDiv
 {% assign image_folder = "../assets/images/screenshots/LTFO" %}
 <div class="img-hover-zoom point-zoom h17">
   <img src="{{image_folder}}/Create message.png" style="transform-origin: 0% 0%;" /></div>
+  <br/>
 <div class="img-hover-zoom point-zoom h19">
   <img src="{{image_folder}}/Confirm all.png" style="transform-origin: 0% 50%;" /></div>
+  <br/>
 <div class="img-hover-zoom point-zoom h16">
   <img src="{{image_folder}}/File generation.png" style="transform-origin: 0% 15%;" /></div>
+  <br/>
 <div class="img-hover-zoom point-zoom h16">
   <img src="{{image_folder}}/Removal Tool.png" style="transform-origin: 0% 0%;" /></div>
-<div style="text-align: center;"><h3></h3><div class="highlight"><span onclick="toggleDiv('moreScreenshots')"><h3>[View more screenshots]</span></h3></div></div>
+  <br/>
+<div style="text-align: center;"><h3></h3><div class="highlight"><span onclick="toggleDiv('moreScreenshots')">[View more screenshots]</span></div></div>
 <div class="spoiler" id="moreScreenshots" style="padding: 0%; background-color: transparent;">
-  <div class="img-hover-zoom point-zoom h15">
-    <img src="{{image_folder}}/Document contents.png" style="transform-origin: 0% 0%;" /></div>
-  <div class="img-hover-zoom point-zoom h15">
-    <img src="{{image_folder}}/File explorer.png" style="transform-origin: 0% 100%;" /></div>
-</div>
+  <div style="display: block; text-align: center; margin-left: auto; margin-right: auto;">
+    <img src="{{image_folder}}/Document contents.png" />
+    <br/>
+    <img src="{{image_folder}}/File explorer.png" />
+</div></div>
 <hr>
 <i>This script was written and tested using <b>Python 3.7</b> on <b>Windows 10</b> and may not function as intended using different versions of Python or Windows.</i>
