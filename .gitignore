@@ -2,8 +2,11 @@ _site
 .sass-cache
 Gemfile.lock
 *.gem
-start.bat
+build.bat
+serve.bat
 .cssbackup
 Ruby console.lnk
 .Photoshop
 cayman.html
+Gemfile
+*.gemspec

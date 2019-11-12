@@ -220,7 +220,7 @@ script1: toggleDiv
   <img src="{{image_folder}}/Removal-tool.png" style="transform-origin: 0% 0%;" /></div>
 
   <br/>
-<div style="text-align: center;"><div class="highlight"><span onclick="toggleDiv('moreScreenshots')">[View more screenshots]</span></div></div>
+<div style="text-align: center; display: block" id="viewMoreScreenshots"><div class="highlight"><span onclick="toggleDiv('moreScreenshots'); toggleDiv('viewMoreScreenshots')">[View more screenshots]</span></div></div>
 <div class="spoiler" id="moreScreenshots" style="background-color: transparent;">
   <div style="display: block; text-align: center; margin-left: auto; margin-right: auto;">
     <img src="{{image_folder}}/Document-contents.png" />
