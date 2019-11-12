@@ -70,6 +70,39 @@ a:not(.btn):hover {
 
 ======================================================================
 */
+  /* https://w3bits.com/css-image-hover-zoom/ */
+  /* The Image container */
+  .img-hover-zoom {
+    width: auto;
+    height: auto;
+     /* Modify this according to your need */
+    overflow: hidden; /* Removing this will break the effects */
+  }
+  /* Point-zoom Container */
+  .point-zoom img {
+    display: block !important;
+    transform-origin: 0% 0%;
+    transition: transform 1s, filter .5s ease-out;
+  }
+  
+  /* The Transformation */
+  .h15:hover img {
+    transform: scale(1.5);
+  }
+  .h16:hover img {
+    transform: scale(1.7);
+  }
+  .h17:hover img {
+    transform: scale(1.7);
+  }
+  .h19:hover img {
+    transform: scale(1.9);
+  }
+/*
+======================================================================
+
+======================================================================
+*/
 
 #nprogress {
   pointer-events: none;

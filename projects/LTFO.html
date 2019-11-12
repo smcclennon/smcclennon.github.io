@@ -204,37 +204,8 @@ script1: toggleDiv
   <div class="spoiler" id="lm-usbReq">If you are planning to use a python install from the USB, please create a shortcut to run the script using Python on the flash drive.</div>
   <li>Windows</li>
 </ul>
-<h2>Screenshots</h2>
-<style>
-  /* https://w3bits.com/css-image-hover-zoom/ */
-  /* The Image container */
-.img-hover-zoom {
-  width: auto;
-  height: auto;
-   /* Modify this according to your need */
-  overflow: hidden; /* Removing this will break the effects */
-}
-/* Point-zoom Container */
-.point-zoom img {
-  display: block !important;
-  transform-origin: 0% 0%;
-  transition: transform 1s, filter .5s ease-out;
-}
 
-/* The Transformation */
-.h15:hover img {
-  transform: scale(1.5);
-}
-.h16:hover img {
-  transform: scale(1.7);
-}
-.h17:hover img {
-  transform: scale(1.7);
-}
-.h19:hover img {
-  transform: scale(1.9);
-}
-  </style>
+<h2>Screenshots</h2>
 {% assign image_folder = "../assets/images/screenshots/LTFO" %}
 <div class="img-hover-zoom point-zoom h17">
   <img src="{{image_folder}}/Create-message.png" style="transform-origin: 0% 0%;" /></div>
