@@ -1,12 +1,11 @@
+.cssbackup
+.Photoshop
 _site
 .sass-cache
 Gemfile.lock
 *.gem
+*.gemspec
+cayman.html
 build.bat
 serve.bat
-.cssbackup
 Ruby console.lnk
-.Photoshop
-cayman.html
-Gemfile
-*.gemspec
