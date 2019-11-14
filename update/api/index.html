@@ -42,6 +42,7 @@ script2: LoadCSS
       <th style="text-align: center">ID</th>
       <th style="text-align: left">Project</th>
       <th style="text-align: left">Version</th>
+      <th style="text-align: left">Abilities</th>
     </tr>
   </thead>
   <tbody>
@@ -49,11 +50,13 @@ script2: LoadCSS
       <td style="text-align: left"><a target="_blank" rel="noopener noreferrer" href="1">1</a></td>
       <td style="text-align: left"><a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/LTFO">LTFO</a></td>
       <td style="text-align: left">Up to date</td>
+      <td style="text-align: left">Get latest release information, update project name, download the latest release, get patch notes for up to previous 5 versions</td>
     </tr>
     <tr>
       <td style="text-align: left"><a target="_blank" rel="noopener noreferrer" href="2">2</a></td>
       <td style="text-align: left"><a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/SMN">SMN</a></td>
       <td style="text-align: left">Outdated</td>
+      <td style="text-align: left">Get latest release information, update project name, download the latest release</td>
     </tr>
   </tbody>
 </table>
@@ -63,44 +66,45 @@ script2: LoadCSS
 <pre><code data-language="python">updateAttempt = 0
 print('Checking for updates...', end='\r')
 try:  # Remove previous version if just updated
-    proj = options['proj']
-    with open(f'{proj}.tmp', 'r') as content_file:
-        oldFile = str(content_file.read())
+    proj = options['proj']  # Get the current project name
+    with open(f'{proj}.tmp', 'r') as content_file:  # Open the temporary file
+        oldFile = str(content_file.read())   # Get the old filename
         # If the old version has the current filename, don't delete
         if oldFile != os.path.basename(__file__):
-            os.remove(oldFile)
+            os.remove(oldFile)  # Delete the previous version of LTFO
     os.remove(f'{proj}.tmp')
 except:
     pass
-while updateAttempt < 3:
+while updateAttempt < 3:  # Attempt to check for updates 3 times (for unstable connections)
     updateAttempt = updateAttempt+1
-    try:
+    try:  # Try to check for updates
         with urllib.request.urlopen("https://smcclennon.github.io/update/api/1") as url:
             repo = []
             for line in url.readlines():
-                repo.append(line.decode().strip())
+                repo.append(line.decode().strip())  # Read my API
             apiLatest = repo[0]  # Latest release details
-            proj = repo[1]  # Project name
+            proj = repo[1]  # Update the project name
             ddl = repo[2]  # Direct download
             apiReleases = repo[3]  # List of patch notes
         with urllib.request.urlopen(apiLatest) as url:
-            data = json.loads(url.read().decode())
+            data = json.loads(url.read().decode())  # Read the GitHub API
             latest = data['tag_name'][1:]
         del data  # Prevent overlapping variable data
         release = json.loads(urllib.request.urlopen(
             apiReleases).read().decode())
-        releases = [
+        releases = [  # Gather (up to) 5 *new* patch notes
             (data['tag_name'], data['body'])
             for data in release
-            if data['tag_name'] > ver][::-1]
+            if data['tag_name'][1:] > ver][::-1]  # [1:] removes "v" from "v1.2.3"
         updateAttempt = 3
     except:
-        latest = '0'
+        latest = '0'  # If checking for updates fails, set the latest version to 0
+
 if latest > ver:
     print('Update available!      ')
     print(f'Latest Version: v{latest}\n')
     for release in releases:
-        print(f'{release[0]}:\n{release[1]}\n')
+        print(f'{release[0]}:\n{release[1]}\n')  # Print patch notes
     confirm = input(str('Update now? [Y/n] ')).upper()
     if confirm == '' or confirm == 'Y':
         latestFilename = f'{proj} v{latest}.py'
@@ -109,6 +113,6 @@ if latest > ver:
         urllib.request.urlretrieve(ddl, latestFilename)
         # Write the current filename to LTFO.tmp
         f = open(f'{proj}.tmp', 'w')
-        f.write(str(os.path.basename(__file__)))
+        f.write(str(os.path.basename(__file__)))  # Write the current file name to a temporary file
         f.close()
         os.system(f'"{latestFilename}"')  # Open latest version in the current console window</code></pre>
