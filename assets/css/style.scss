@@ -84,7 +84,7 @@ a:not(.btn):hover {
     transform-origin: 0% 0%;
     transition: transform 1s, filter .5s ease-out;
   }
-  
+
   /* The Transformation */
   .h15:hover img {
     transform: scale(1.5);
@@ -108,7 +108,7 @@ a:not(.btn):hover {
   pointer-events: none;
 }
 #nprogress .bar {
-  background: var(--grad-light);
+  background: var(--grad-dark);
   position: fixed;
   z-index: 1031;
   top: 0;
@@ -127,7 +127,7 @@ a:not(.btn):hover {
   right: 0;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px var(--grad-dark), 0 0 5px var(--grad-dark);
+  box-shadow: 0 0 10px var(--grad-light), 0 0 5px var(--grad-light);
   opacity: 1;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -ms-transform: rotate(3deg) translate(0px, -4px);
