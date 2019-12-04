@@ -1,8 +1,8 @@
-# Group 1
+# Group All
 User-agent: *
-Disallow: /update/api/1.html
+Disallow: /projects
+Allow: /projects/*
 Disallow: /update/api/1
-Disallow: /update/api/2.html
 Disallow: /update/api/2
 Disallow: /update
 Allow: /update/api

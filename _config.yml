@@ -15,11 +15,11 @@ plugins:
   - jekyll-sitemap
 defaults:
   - scope:
-      path: "update/api/1.html"
+      path: "/projects/index.html"
     values:
       sitemap: false
   - scope:
-      path: "update/api/2.html"
+      path: "update/api/*"
     values:
       sitemap: false
   - scope:
@@ -30,3 +30,8 @@ defaults:
       path: "404.html"
     values:
       sitemap: false
+
+  - scope:
+      path: "update/api/index.html"
+    values:
+      sitemap: true
