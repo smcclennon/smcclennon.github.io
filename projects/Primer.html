@@ -1,0 +1,66 @@
+---
+layout: default
+title: Primer
+subtitle: Prime number generator
+
+b1: Home
+b1_url: ../
+
+b2: Projects
+b2_url: ../projects
+
+b3: Primer on GitHub
+b3_url: https://github.com/smcclennon/Primer
+b3_property: newtab
+
+b4: Download Primer
+b4_url: https://github.com/smcclennon/Primer/releases/latest/download/Primer.py
+
+script1: toggleDiv
+---
+
+<h2 id="about">About Primer</h2>
+<p>
+  On the 25th of November 2019 I was watching a <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/VYech-c5Dic">video</a> about the importance of prime numbers for encryption. This spiked my interest, and after learning how critical prime numbers are for the world we live in, I really wanted to start generating my own.
+</p>
+<p>
+  The intention wasn't to find the next biggest prime number, Python is definitely the wrong language to use for that purpose, but instead just to see if I could continuously generate prime numbers, store them all to a file, and continue where I left off next time I start the script.
+</p>
+<p>
+  I immediately made a head start on getting the basic generation working, and the following morning created a GitHub repository for the project and pushed what I had <a target="_blank" rel="noopener noreferrer" href="https://github.com/smcclennon/Primer/blob/2c5ffa0f089ce3b70c6637a449532903cf3d288a/Primer.py">created so far</a>.
+</p>
+<p>
+  It's non-destructive nature suprised my teachers, and they were all rather impressed how Primer performed and the statistics it provided.
+</p>
+
+
+<h1>So, what can it do?</h1>
+<p>Primer is a portable prime number generator which can pickup where you left off on any OS you run it on (<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/mcclennondev/status/1232774072326594560">even works on Android!)</a></p>
+<h2>Features</h2>
+<ul>
+  <li>Automatic Updates</li>
+  <li>Cross-compatible with Windows & Unix</li>
+  <li>Generate prime numbers</li>
+  <li>Save prime numbers as plain text to Primer.txt</li>
+  <li>Save generation statistics such as total calculations & number of primes found to Primer_config.json</li>
+</ul>
+
+<h3>Installation</h3>
+<p>Download the latest release directly onto the target machine, or run on a USB.</p>
+
+<h3>Requirements</h3>
+<ul>
+  <li>Python 3.6+ <div class="highlight"><span onclick="toggleDiv('lm-usbReq')">[Learn more]</span></div></li>
+  <div class="spoiler" id="lm-usbReq">If you are planning to use a python install from the USB, please create a shortcut to run the script using the Python install on the flash drive.</div>
+  <li>Windows</li>
+</ul>
+
+<h2>Screenshots</h2>
+{% assign image_folder = "../assets/images/screenshots/Primer" %}
+<div class="img-hover-zoom point-zoom h17">
+  <img src="{{image_folder}}/windows.png" style="transform-origin: 0% 0%;" /></div>
+<br/>
+<div class="img-hover-zoom point-zoom h19">
+  <img src="{{image_folder}}/unix.png" style="transform-origin: 36% 80%;" /></div>
+<br/>
+<i>This script was written and tested using <b>Python 3.8</b> on <b>Windows 10</b> and may not function as intended using different versions of Python</i>
