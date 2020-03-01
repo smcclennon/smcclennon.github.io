@@ -43,7 +43,11 @@
       {% endif %}
     <link rel="shortcut icon" type="image/png" href="{{ root_url }}/{{ site.logo }}">
   </head>
-  <body>
+  {% if page.css_preset == 'red' %}
+    <body style="--grad-dark: #7a2828; --grad-light: #a73737; --header-colour: var(--grad-light); --link-colour: #a74848;">
+  {% else %}
+    <body>
+  {% endif %}
     <header class="page-header" id="top" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.subtitle | default: site.description | default: site.github.project_tagline }}</h2>
