@@ -1,2 +1,49 @@
-<!DOCTYPE html> <meta http-equiv="Refresh" content="0; url=https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" />
-<!-- Direct redirect to the official (safe) coronavirus map -->
+---
+layout: default
+title: Live Coronavirus Maps
+subtitle: Direct links to safe, trusted sites
+
+b1: Home
+b1_url: ../
+
+script1: LoadCSS
+script2: ifTouchscreen
+---
+
+<script>
+  LoadCSS('../assets/css/portfolio-base.css');
+  ifTouchscreen(
+    () => LoadCSS('../assets/css/portfolio-static.css'),
+    () => LoadCSS('../assets/css/portfolio-animated.css')
+  );
+</script>
+<!--https://codepen.io/littlesnippets/pen/adLELd-->
+<!-- ion-upload ion-status-bars -->
+<div style="text-align:center">
+  <h3>There has been a lot of malicious corona virus maps circulating around which are taking advantage of the pandemic. Here you can find direct links to safe maps.</h3>
+  <figure class="snip1321">
+    <img src="../assets/images/Screenshots/Corona Maps/JHU.png" alt="LTFO" />
+    <figcaption>
+      <img src="../assets/images/Monitor Icon.png" />
+      <h4>John Hopkins University</h4>
+    </figcaption>
+    <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6"></a>
+  </figure>
+  <!--<figure class="snip1321 hover">-->
+  <figure class="snip1321">
+    <img src="../assets/images/Screenshots/Corona Maps/PHE.png" alt="SMN" />
+    <figcaption>
+      <img src="../assets/images/Monitor Icon.png" />
+      <h4>Public Health England</h4>
+    </figcaption>
+    <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/f94c3c90da5b4e9f9a0b19484dd4bb14"></a>
+  </figure>
+  <figure class="snip1321">
+    <img src="../assets/images/Screenshots/Corona Maps/PHE Mobile.png" alt="Primer" />
+    <figcaption>
+      <img src="../assets/images/iPhone X Icon.png" />
+      <h4>Public Health England</h4>
+    </figcaption>
+    <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/ae5dda8f86814ae99dde905d2a9070ae"></a>
+  </figure>
+</div>
