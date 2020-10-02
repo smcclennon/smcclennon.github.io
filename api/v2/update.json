@@ -1,0 +1,77 @@
+{
+    "ver": "2.0.0",
+    "project": {
+        "1": {
+            "name": "LTFO",
+            "github_api": {
+                "latest_release": {
+                    "info": "https://api.github.com/repos/smcclennon/LTFO/releases/latest",
+                    "release_download": "https://github.com/smcclennon/LTFO/releases/latest/download/LTFO.py"
+                },
+                "all_releases": {
+                    "info": "https://api.github.com/repos/smcclennon/LTFO/releases"
+                }
+            }
+        },
+        "2": {
+            "name": "SMN",
+            "github_api": {
+                "latest_release": {
+                    "info": "https://api.github.com/repos/smcclennon/SMN/releases/latest",
+                    "release_download": "https://github.com/smcclennon/SMN/releases/latest/download/PSMNBOX.py"
+                },
+                "all_releases": {
+                    "info": "https://api.github.com/repos/smcclennon/SMN/releases"
+                }
+            }
+        },
+        "3": {
+            "name": "Primer",
+            "github_api": {
+                "latest_release": {
+                    "info": "https://api.github.com/repos/smcclennon/Primer/releases/latest",
+                    "release_download": "https://github.com/smcclennon/Primer/releases/latest/download/Primer.py"
+                },
+                "all_releases": {
+                    "info": "https://api.github.com/repos/smcclennon/Primer/releases"
+                }
+            }
+        },
+        "4": {
+            "name": "FFDB",
+            "github_api": {
+                "latest_release": {
+                    "info": "https://api.github.com/repos/smcclennon/FFDB/releases/latest",
+                    "release_download": "https://github.com/smcclennon/FFDB/releases/latest/download/FFDB.py"
+                },
+                "all_releases": {
+                    "info": "https://api.github.com/repos/smcclennon/FFDB/releases"
+                }
+            }
+        },
+        "5": {
+            "name": "Updater",
+            "github_api": {
+                "latest_release": {
+                    "info": "https://api.github.com/repos/smcclennon/Updater/releases/latest",
+                    "release_download": "https://github.com/smcclennon/Updater/releases/latest/download/Updater.py"
+                },
+                "all_releases": {
+                    "info": "https://api.github.com/repos/smcclennon/Updater/releases"
+                }
+            }
+        },
+        "6": {
+            "name": "PBOX",
+            "github_api": {
+                "latest_release": {
+                    "info": "https://api.github.com/repos/smcclennon/PBOX/releases/latest",
+                    "release_download": "https://github.com/smcclennon/PBOX/releases/latest/download/PBOX.py"
+                },
+                "all_releases": {
+                    "info": "https://api.github.com/repos/smcclennon/PBOX/releases"
+                }
+            }
+        }
+    }
+}
