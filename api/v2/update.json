@@ -18,7 +18,7 @@
             "github_api": {
                 "latest_release": {
                     "info": "https://api.github.com/repos/smcclennon/SMN/releases/latest",
-                    "release_download": "https://github.com/smcclennon/SMN/releases/latest/download/PSMNBOX.py"
+                    "release_download": "https://github.com/smcclennon/SMN/releases/latest/download/SMN.py"
                 },
                 "all_releases": {
                     "info": "https://api.github.com/repos/smcclennon/SMN/releases"
