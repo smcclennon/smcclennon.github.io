@@ -35,6 +35,7 @@ However, on the 5th May 2020, I spent two days porting my python script [Primer]
 
 ### Hacktoberfest Late 2019 {#hf19}
 
+### Hacktoberfest (2019) {#hf19}
 I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of September 2019 after hearing people discuss it in college. It was quickly forgotten about as I continued to focus on the development of [LTFO](projects/LTFO). A month later, an email was received stating that I had (unknowingly) completed the event with
 <span onclick="toggleDiv('hf19-contributions')"><a href="#hf19-contributions"><b>9</b> verified pull requests</a></span>.
 <div id="hf19-contributions" markdown="1" style="display: none">
@@ -54,11 +55,10 @@ I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of
 
 </div>
 
-
-### National Cyber Security Centre Late 2019 {#ncsc}
+### National Cyber Security Centre (2019) {#ncsc}
 Awesome. I was able to talk to professionals about web-request headers, the differences between authentication and authorization, and even had a lecture from an ethical hacker.
 He spoke to us about how he has broken into various banks, both physically and digitally.
 Also under discussion was the use of phishing and the most common passwords, ironically including '123456' and 'password'.
 
-### Cyber Discovery Late 2018 {#cd18}
+### Cyber Discovery (2018) {#cd18}
 I was advised to join Cyber Discovery, the Government funded extracurricular programme for students aged 13-18. ~50% of the CyberStart Game module was completed during the late 2018 intake. My favourite task in this programme was to SSH into Linux servers and extract various hidden information within them.
