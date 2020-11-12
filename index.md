@@ -41,16 +41,15 @@ I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of
 
 #### My Hacktoberfest contributions
 |Type|Date/Time|Contribution|
-|--- |--- |--- |
-|Valid|October 13, 2019 17:42|Submitted Development to smcclennon/LTFO|
-|Valid|October 19, 2019 19:52|Submitted v4.0.0 to smcclennon/LTFO|
-|Valid|October 19, 2019 20:35|Submitted Update dev with master to smcclennon/LTFO|
-|Valid|October 20, 2019 17:48|Submitted 4.1.0 to smcclennon/LTFO|
-|Bonus|October 20, 2019 17:53|Submitted Revert "v4.1.0" to smcclennon/LTFO|
-|Bonus|October 20, 2019 17:59|Submitted v4.1.0 to smcclennon/LTFO|
-|Bonus|October 24, 2019 18:57|Submitted File picker supports all filetypes + GUI to smcclennon/LTFO|
-|Bonus|October 28, 2019 08:42|Submitted v5.0.0 to smcclennon/LTFO|
-|Bonus|October 28, 2019 08:44|Submitted v5.0.0 to smcclennon/LTFO|
+|Valid|October 13, 2019 17:42|Submitted [Development](https://github.com/smcclennon/LTFO/pull/1) to smcclennon/LTFO|
+|Valid|October 19, 2019 19:52|Submitted [v4.0.0](https://github.com/smcclennon/LTFO/pull/3) to smcclennon/LTFO|
+|Valid|October 19, 2019 20:35|Submitted [Update dev with master](https://github.com/smcclennon/LTFO/pull/4) to smcclennon/LTFO|
+|Valid|October 20, 2019 17:48|Submitted [4.1.0](https://github.com/smcclennon/LTFO/pull/5) to smcclennon/LTFO|
+|Bonus|October 20, 2019 17:53|Submitted [Revert "v4.1.0"](https://github.com/smcclennon/LTFO/pull/6) to smcclennon/LTFO|
+|Bonus|October 20, 2019 17:59|Submitted [v4.1.0](https://github.com/smcclennon/LTFO/pull/7) to smcclennon/LTFO|
+|Bonus|October 24, 2019 18:57|Submitted [File picker supports all filetypes + GUI](https://github.com/smcclennon/LTFO/pull/10) to smcclennon/LTFO|
+|Bonus|October 28, 2019 08:42|Submitted [v5.0.0](https://github.com/smcclennon/LTFO/pull/12) to smcclennon/LTFO|
+|Bonus|October 28, 2019 08:44|Submitted [v5.0.0](https://github.com/smcclennon/LTFO/pull/13) to smcclennon/LTFO|
 
 </div>
 
