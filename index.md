@@ -33,7 +33,7 @@ However, on the 5th May 2020, I spent two days porting my python script [Primer]
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
-### Hacktoberfest Late 2019 {#hf19}
+
 
 ### Hacktoberfest (2019) {#hf19}
 I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of September 2019 after hearing people discuss it in college. It was quickly forgotten about as I continued to focus on the development of [LTFO](projects/LTFO). A month later, an email was received stating that I had (unknowingly) completed the event with
