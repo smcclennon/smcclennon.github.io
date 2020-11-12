@@ -41,6 +41,7 @@ I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of
 
 #### My Hacktoberfest contributions
 |Type|Date/Time|Contribution|
+|:-|:-|:-|
 |Valid|October 13, 2019 17:42|Submitted [Development](https://github.com/smcclennon/LTFO/pull/1) to smcclennon/LTFO|
 |Valid|October 19, 2019 19:52|Submitted [v4.0.0](https://github.com/smcclennon/LTFO/pull/3) to smcclennon/LTFO|
 |Valid|October 19, 2019 20:35|Submitted [Update dev with master](https://github.com/smcclennon/LTFO/pull/4) to smcclennon/LTFO|
