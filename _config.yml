@@ -3,6 +3,12 @@ title: Shiraz McClennon
 description: Computer science student interested in cyber security
 logo: assets/images/smcclennon.png
 lang: en_GB
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  auto_ids:       true
+  toc_levels:     1..3
+
 social:
   name: Shiraz McClennon
   links:
