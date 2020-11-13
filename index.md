@@ -26,7 +26,6 @@ I enjoy programming, and have used a few different languages over the past few y
 - BTEC: IT (Level 2)
 
 ## My Experience {#experience}
-
 My favourite language is Python, but I'm also experimenting with Java. In late 2018, my interest lead me to delve into C++ which went no further than `std::cout << "Hello, World!";` as at the time I did not need such a low-level programming language to pursue my projects.
 
 However, on the 5th May 2020, I spent two days porting my python script [Primer](https://github.com/smcclennon/Primer) to C++, which significantly increadsed my knowledge and understanding of the language.
