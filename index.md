@@ -19,7 +19,11 @@ Hi, my name is Shiraz McClennon, and I'm a computer science student passionate a
 
 I enjoy programming, and have used a few different languages over the past few years, both interpreted and compiled.
 
-I enjoy programming in my free time, and have used a few different languages over the years, some I'm far more experienced in than others.
+## Qualifications
+- [Palo Alto Networks Cybersecurity Foundation](https://www.paloaltonetworks.com/services/education/academy)
+- [Cisco Introduction to Packet Tracer](https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer)
+- GCSE: English Language, English Literature, Mathematics, Computer Science, Electronics, Media, Combined Sci
+- BTEC: IT (Level 2)
 
 ## My Experience {#experience}
 
