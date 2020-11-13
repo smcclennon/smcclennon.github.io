@@ -35,6 +35,29 @@ However, on the 5th May 2020, I spent two days porting my python script [Primer]
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
 
+### Hacktoberfest (2020) {#hf20}
+This year, there was a noticable improvement from last year. DigitalOcean resolved an issue where regular commits counting as pull requests. This year, the repository you were contributing to also had to have the `hacktoberfest` label, or your pull request would not count towards Hacktoberfest.
+
+Unlike last year, this year I was prepared. I had pre-planned which of [my projects](projects) I would work on in order to complete Hacktoberfest, which I did with **10** verified pull requests.
+<span id="hf20-readmore" style="display: inline" onclick="toggleDiv('hf20-contributions'); toggleDiv('hf20-readmore')"><a href="#" onclick="return false;"><b>[View contributions]</b></a></span>
+<div id="hf20-contributions" markdown="1" style="display: none">
+
+#### My 2020 Contributions
+
+|Type|Date/Time|Contribution|
+|:-|:-|:-|
+|Accepted|October 03, 2020 15:54|Submitted [Updater v2.0.0, using the v2 json update API to](https://github.com/smcclennon/Updater/pull/1) smcclennon/Updater|
+|Accepted|October 03, 2020 16:32|Submitted [Update dev branch with master](https://github.com/smcclennon/LTFO/pull/14) to smcclennon/LTFO|
+|Accepted|October 03, 2020 23:43|Submitted [v0.0.0](https://github.com/smcclennon/PBOX/pull/1) to smcclennon/PBOX|
+|Accepted|October 03, 2020 23:59|Submitted [Improvements + license](https://github.com/smcclennon/Updater/pull/2) to smcclennon/Updater|
+|Bonus|October 04, 2020 12:40|Submitted [Improvements](https://github.com/smcclennon/LTFO/pull/15) to smcclennon/LTFO|
+|Bonus|October 04, 2020 13:44|Submitted [Small improvements](https://github.com/smcclennon/Updater/pull/3) to smcclennon/Updater|
+|Bonus|October 05, 2020 11:44|Submitted [v0.0.1](https://github.com/smcclennon/PBOX/pull/2) to smcclennon/PBOX|
+|Bonus|October 07, 2020 08:32|Submitted [v0.1.0](https://github.com/smcclennon/PBOX/pull/3) to smcclennon/PBOX|
+|Bonus|October 10, 2020 20:09|Submitted [Comments + bug fixes](https://github.com/smcclennon/Updater/pull/4) to smcclennon/Updater|
+|Bonus|October 13, 2020 08:05|Submitted [New program + bug fixes](https://github.com/smcclennon/PBOX/pull/4) and improvements to smcclennon/PBOX|
+
+</div>
 
 ### Hacktoberfest (2019) {#hf19}
 I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of September 2019 after hearing people discuss it in college. It was quickly forgotten about as I continued to focus on the development of [LTFO](projects/LTFO). A month later, an email was received stating that I had (unknowingly) completed the event with **9** verified pull requests.
