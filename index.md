@@ -34,6 +34,24 @@ However, on the 5th May 2020, I spent two days porting my python script [Primer]
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
+### Cisco Work Experience (2020) {#cisco-wex}
+I absolutely loved it. It was a little different this year, as it was done virtually, so unfortunately I was unable to visit the Cisco offices. However, the experience was still very enjoyable and insightful.
+
+The work experience was for a week, Monday to Friday, 9 to 5. It was rather challenging at times if I'm honest.
+The lectures were attended interactively via [Cisco WebEx](https://www.webex.com/). One of the most interesting features of the work placement was the students being required to prepare a presentation by the end of the week of an innovative product, presented to the Dragons. The students were given the creative opportunity to annotate lecture slides and participate in polls, as well as discuss certain topics such as ethics with our group.
+<span id="cisco-wex-readmore" style="display: inline" onclick="toggleDiv('cisco-wex-detail'); toggleDiv('cisco-wex-readmore')">
+<a href="#" onclick="return false;"><b>[Read more]</b></a></span>
+<div id="cisco-wex-detail" markdown="1" style="display: none">
+
+The students were given a 1 hour slot to work on their presentations (per day). Due to my computing and leadership skills, I was quickly nominated as the leader for my group. As the work experience was virtual, my IT knowledge was an advantage for organising and collaborating on this with my team. My team quickly realised that we needed more time to work on the project outside of the allocated 1 hour, and therefore to facilitate this, I got permission from the Cisco work experience organisers, and created a [Discord](https://discord.com/) server which allowed us to collaborate on it in our free time.
+
+After discussing the product brief for our presentation, we spent two days planning it. I then assigned research roles to each team member so we could all independantly complete our respective, detailed but concise powerpoint slides.
+
+As the project manager, I went through each slide to taper down the information in order to conform to the 5 minute presentation time limit. To manage everyones anxiety, after a couple of dry-runs, I suggested my team members relax for the half hour proceeding the Dragons.
+
+It was a success... even though we ran over the 5 minute limit.
+
+</div>
 
 ### Hacktoberfest (2020) {#hf20}
 This year, there was a noticable improvement from last year. DigitalOcean resolved an issue where regular commits counting as pull requests. This year, the repository you were contributing to also had to have the `hacktoberfest` label, or your pull request would not count towards Hacktoberfest.
