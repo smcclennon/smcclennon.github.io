@@ -37,8 +37,8 @@ However, on the 5th May 2020, I spent two days porting my python script [Primer]
 
 
 ### Hacktoberfest (2019) {#hf19}
-I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of September 2019 after hearing people discuss it in college. It was quickly forgotten about as I continued to focus on the development of [LTFO](projects/LTFO). A month later, an email was received stating that I had (unknowingly) completed the event with
-<span onclick="toggleDiv('hf19-contributions')"><a href="#hf19-contributions"><b>9</b> verified pull requests</a></span>.
+I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of September 2019 after hearing people discuss it in college. It was quickly forgotten about as I continued to focus on the development of [LTFO](projects/LTFO). A month later, an email was received stating that I had (unknowingly) completed the event with **9** verified pull requests.
+<span id="hf19-readmore" style="display: inline" onclick="toggleDiv('hf19-contributions'); toggleDiv('hf19-readmore')"><a href="#" onclick="return false;"><b>[View contributions]</b></a></span>
 <div id="hf19-contributions" markdown="1" style="display: none">
 
 #### My 2019 Contributions
