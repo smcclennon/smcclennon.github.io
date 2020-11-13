@@ -41,7 +41,7 @@ I joined [Hacktoberfest](https://hacktoberfest.digitalocean.com/) on the 26th of
 <span onclick="toggleDiv('hf19-contributions')"><a href="#hf19-contributions"><b>9</b> verified pull requests</a></span>.
 <div id="hf19-contributions" markdown="1" style="display: none">
 
-#### My Hacktoberfest contributions
+#### My 2019 Contributions
 
 |Type|Date/Time|Contribution|
 |:-|:-|:-|
