@@ -48,7 +48,7 @@
   {% else %}
     <body>
   {% endif %}
-    <header class="page-header" id="top" role="banner">
+    <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.subtitle | default: site.description | default: site.github.project_tagline }}</h2>
 
@@ -98,7 +98,20 @@
       <allPageContent id="all-content" style="display: none;">
       {{ content }}
       <footer class="site-footer">
-        <span class="site-footer-credits"><div style="text-align: left; display: inline-block"><a href="https://github.com/smcclennon"><img src="{{ root_url }}/assets/images/GitHub-Mark-32px.png" alt="GitHub" style="height: 24px; width: 24px;" /></a>     <a href="https://twitter.com/mcclennondev"><img src="{{ root_url }}/assets/images/Twitter-32px.ico" alt="Twitter" style="height: 24px; width: 24px;" /></a></div><div style="float:right !important; display: inline-block;"><a href="#top">Go back to the top</a></div></span>
+        <span class="site-footer-credits">
+          <a style="text-align: left;" href="https://github.com/smcclennon/smcclennon.github.io">View source code</a>
+          <a style="float: right; text-align: right;" href="#">Go back to the top</a>
+
+          <div style="text-align: center;">
+            <a href="https://github.com/smcclennon">
+              <img src="{{ root_url }}/assets/images/GitHub-Mark-32px.png" alt="GitHub" style="height: 24px; width: 24px;" />
+            </a>
+
+            <a href="https://twitter.com/mcclennondev">
+              <img src="{{ root_url }}/assets/images/Twitter-32px.ico" alt="Twitter" style="height: 24px; width: 24px;" />
+            </a>
+          </div>
+        </span>
         <script>NProgress.inc();</script>
       </footer></allPageContent>
     </main>
