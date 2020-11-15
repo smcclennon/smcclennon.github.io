@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hello World.
-subtitle: I'm a computer science student passionate about cyber security
+subtitle: I'm a computer science student passionate about creating useful code
 
 b1: GitHub
 b1_url: https://github.com/smcclennon?tab=repositories
@@ -15,9 +15,9 @@ b3_url: update/api
 script1: toggleDiv
 ---
 # About Myself {#about}
-Hi, my name is Shiraz McClennon, and I'm a computer science student passionate about cyber security.
+Hi, my name is Shiraz McClennon. I'm studying A level computer science, and have a particular interest in cyber security.
 
-I enjoy programming, and have used a few different languages over the past few years, both interpreted and compiled.
+I enjoy programming, and have used several languages over the past few years, both interpreted and compiled.
 
 ## Qualifications
 - [Palo Alto Networks Cybersecurity Foundation](https://www.paloaltonetworks.com/services/education/academy)
