@@ -6,8 +6,12 @@ subtitle: Learn more about my code
 b1: Home
 b1_url: ../
 
-b2: API
-b2_url: ../update/api
+b2: Github Repositories
+b2_url: https://github.com/smcclennon?tab=repositories
+b2_property: newtab
+
+b3: API
+b3_url: ../update/api
 ---
 <h1 align="center">Python</h1>
 
