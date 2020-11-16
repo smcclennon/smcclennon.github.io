@@ -4,7 +4,8 @@ title: Hello World.
 subtitle: I'm a computer science student passionate about creating useful code
 
 b1: GitHub
-b1_url: https://github.com/smcclennon?tab=repositories
+b1_url: https://github.com/smcclennon
+b1_property: newtab
 
 b2: Projects
 b2_url: projects
