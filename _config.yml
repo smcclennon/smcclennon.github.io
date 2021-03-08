@@ -13,7 +13,7 @@ social:
   name: Shiraz McClennon
   links:
     - https://github.com/smcclennon
-google_analytics: UA-151447933-1
+google_analytics:
 theme: jekyll-theme-cayman
 url: "https://smcclennon.github.io"
 plugins:
