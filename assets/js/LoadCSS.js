@@ -1,6 +1,8 @@
+// Stackoverflow: "How to load up CSS files using Javascript?"
 // https://stackoverflow.com/questions/574944
+
+// 'cssURL' is the stylesheet's path, i.e. /css/styles.css
 function LoadCSS(cssURL) {
-  // 'cssURL' is the stylesheet's URL, i.e. /css/styles.css
 
   return new Promise(function(resolve, reject) {
     var link = document.createElement('link');
