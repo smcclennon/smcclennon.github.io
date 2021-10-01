@@ -4,8 +4,6 @@ _site
 .sass-cache
 Gemfile.lock
 *.gem
-*.gemspec
 cayman.html
-build.bat
-serve.bat
+*.bat
 Ruby console.lnk
