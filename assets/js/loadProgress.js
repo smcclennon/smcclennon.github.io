@@ -13,7 +13,7 @@ NProgress.configure({
 NProgress.start();
 console.log('==== Loading content... ====');
 
-// Once the page had loaded
+// Once the page has loaded
 window.onload = function() {
 
   // Make the page content div visible once the page has fully loaded
