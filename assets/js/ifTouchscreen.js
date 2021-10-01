@@ -1,4 +1,10 @@
-// https://stackoverflow.com/questions/574944
+// Stackoverflow: "How to detect a mobile device"
+// https://stackoverflow.com/questions/58153528
+
+// Stackoverflow: "What's the best way to detect a 'touch screen' device using JavaScript?"
+// https://stackoverflow.com/questions/4817029
+
+// Stackoverflow: "How do you call a function to run specific code?"
 // https://stackoverflow.com/questions/58770367
 function ifTouchscreen(isTouchscreen, notTouchscreen) {
   function touchCmds() {
