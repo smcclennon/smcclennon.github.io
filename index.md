@@ -21,10 +21,15 @@ Hi, my name is Shiraz McClennon. I'm studying A level computer science, and have
 I enjoy programming, and have used several languages over the past few years, both interpreted and compiled.
 
 ## Qualifications
+- [Palo Alto Networks Cybersecurity Gateway](https://www.paloaltonetworks.com/services/education/academy)
+- [Qufaro CyberEPQ Headstart in Cyber Security](https://cyberepq.org.uk)
+- [Cisco Introduction to Cybersecurity](https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity) -- ([View Certificate](https://www.credly.com/badges/c9eed575-3bd6-4b5e-8046-1b8ce1a721ab))
+- [SANS Foundations Alumni](https://sans-foundations.com) -- ([View certificate](https://api.badgr.io/public/assertions/15UlgOK-RPW78rCWbCtP6A))
 - [Palo Alto Networks Cybersecurity Foundation](https://www.paloaltonetworks.com/services/education/academy)
 - [Cisco Introduction to Packet Tracer](https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer)
+- Pearson BTEC Level 3 National Diploma
+- Computer Science A level
 - GCSE: English Language, English Literature, Mathematics, Computer Science, Electronics, Media, Combined Sci
-- BTEC: IT (Level 2)
 
 ## My Experience {#experience}
 My favourite language is Python due to how quickly it can get things done.
