@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hello World.
-subtitle: I'm a computer science student passionate about creating useful code
+subtitle: I'm super passionate about digital privacy and security.
 
 b1: GitHub
 b1_url: https://github.com/smcclennon
@@ -16,9 +16,15 @@ b3_url: update/api
 script1: toggleDiv
 ---
 # About Myself {#about}
-Hi, my name is Shiraz McClennon. I'm studying A level computer science, and have a particular interest in cyber security.
+I'm an A-level student in the UK that became aware how much data is tracked and stored in an insecure way, whilst I was running and maintaining multiple servers.
 
-I enjoy programming, and have used several languages over the past few years, both interpreted and compiled.
+Curiosity compelled me to investigate all the services I used, which then revealed how oblivious the general public is to the large volumes of data being collected by companies insidiously, data that is shared, used, abused, and stolen far too easily when not effectively protected. Consequently, my interest in digital privacy, security, and encryption grew.
+
+Hence in the past 3 years, I have completed 7 extracurricular cybersecurity-based courses from Cisco, Palo Alto, Qufaro, and SANS. I have also [spoken to the CEO of ACRCloud](https://web.archive.org/web/20201129105704/https://blog.acrcloud.com/how-a-15-year-old-created-a-music-recognition-service-in-less-than-a-day-with-acrcloud)¹ after using their API, and written a blogpost documenting my experience with them.
+
+Cyber-attacks are commonly made possible due to security breaches caused by naivety. My passion lies in encouraging healthy cyber security practices wherever possible. Therefore, I foresee my future in cyber security as helping organisations keep themselves safe or working towards it.
+
+¹*[ACRCloud blog](https://blog.acrcloud.com/how-a-15-year-old-created-a-music-recognition-service-in-less-than-a-day-with-acrcloud) is down, hence the link to the Wayback Machine*
 
 ## Qualifications
 - [Palo Alto Networks Cybersecurity Gateway](https://www.paloaltonetworks.com/services/education/academy)
