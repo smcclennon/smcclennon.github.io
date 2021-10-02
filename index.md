@@ -33,8 +33,8 @@ However, on the 5th May 2020, I spent two days porting my python script [Primer]
 
 |Language|Experience|Abilities|
 |:-|:-|:-|
+|Python|2017-2021|File handling, make web requests, download files, working with [arrays] & {dictionaries}, f'{.format(**variables)}', edit Word documents, integrate Windows OS features, and much more|
 |C++|2020|File handling, working with json & variables, OS specific features, cross-platform code, porting code from python, and more|
-|Python|2017-2020|File handling, make web requests, download files, working with [arrays] & {dictionaries}, f'{.format(**variables)}', edit Word documents, integrate Windows OS features, and much more|
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
