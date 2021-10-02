@@ -35,6 +35,14 @@ a:not(.btn):hover {
   text-decoration: underline;
 }
 
+// Crop images with circular boarder
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
 /*https://stackoverflow.com/questions/18798147*/
 /*
 .highlight {

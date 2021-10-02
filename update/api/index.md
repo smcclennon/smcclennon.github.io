@@ -1,7 +1,7 @@
 ---
 layout: default
 title: API 1.0
-subtitle: Internal API v1.0 (depreciated)
+subtitle: Internal API v1.0 (depricated)
 
 b1: Home
 b1_url: ../../
