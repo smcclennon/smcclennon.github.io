@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hello World.
-subtitle: I'm a computer science student passionate about creating useful code
+subtitle: I'm super passionate about digital privacy and security.
 
 b1: GitHub
 b1_url: https://github.com/smcclennon
@@ -16,25 +16,36 @@ b3_url: update/api
 script1: toggleDiv
 ---
 # About Myself {#about}
-Hi, my name is Shiraz McClennon. I'm studying A level computer science, and have a particular interest in cyber security.
+I'm an A-level student in the UK that became aware how much data is tracked and stored in an insecure way, whilst I was running and maintaining multiple servers.
 
-I enjoy programming, and have used several languages over the past few years, both interpreted and compiled.
+Curiosity compelled me to investigate all the services I used, which then revealed how oblivious the general public is to the large volumes of data being collected by companies insidiously, data that is shared, used, abused, and stolen far too easily when not effectively protected. Consequently, my interest in digital privacy, security, and encryption grew.
+
+Hence in the past 3 years, I have completed 7 extracurricular cybersecurity-based courses from Cisco, Palo Alto, Qufaro, and SANS. I have also [spoken to the CEO of ACRCloud](https://web.archive.org/web/20201129105704/https://blog.acrcloud.com/how-a-15-year-old-created-a-music-recognition-service-in-less-than-a-day-with-acrcloud)¹ after using their API, and written a blogpost documenting my experience with them.
+
+Cyber-attacks are commonly made possible due to security breaches caused by naivety. My passion lies in encouraging healthy cyber security practices wherever possible. Therefore, I foresee my future in cyber security as helping organisations keep themselves safe or working towards it.
+
+¹*[ACRCloud blog](https://blog.acrcloud.com/how-a-15-year-old-created-a-music-recognition-service-in-less-than-a-day-with-acrcloud) is down, hence the link to the Wayback Machine*
 
 ## Qualifications
+- [Palo Alto Networks Cybersecurity Gateway](https://www.paloaltonetworks.com/services/education/academy)
+- [Qufaro CyberEPQ Headstart in Cyber Security](https://cyberepq.org.uk)
+- [Cisco Introduction to Cybersecurity](https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity) -- ([View Certificate](https://www.credly.com/badges/c9eed575-3bd6-4b5e-8046-1b8ce1a721ab))
+- [SANS Foundations Alumni](https://sans-foundations.com) -- ([View certificate](https://api.badgr.io/public/assertions/15UlgOK-RPW78rCWbCtP6A))
 - [Palo Alto Networks Cybersecurity Foundation](https://www.paloaltonetworks.com/services/education/academy)
 - [Cisco Introduction to Packet Tracer](https://www.netacad.com/courses/packet-tracer/introduction-packet-tracer)
+- Pearson BTEC Level 3 National Diploma
+- Computer Science A level
 - GCSE: English Language, English Literature, Mathematics, Computer Science, Electronics, Media, Combined Sci
-- BTEC: IT (Level 2)
 
 ## My Experience {#experience}
-My favourite language is Python, but I'm also experimenting with Java. In late 2018, my interest lead me to delve into C++ which went no further than `std::cout << "Hello, World!";` as at the time I did not need such a low-level programming language to pursue my projects.
+My favourite language is Python due to how quickly it can get things done.
 
-However, on the 5th May 2020, I spent two days porting my python script [Primer](https://github.com/smcclennon/Primer) to C++, which significantly increadsed my knowledge and understanding of the language.
+However in 2020, I ported one of my [python projects](https://github.com/smcclennon/Primer) over to C++ for the performance benefits of the language. This significantly increased my knowledge and understanding of C++.
 
 |Language|Experience|Abilities|
 |:-|:-|:-|
+|Python|2017-2021|File handling, make web requests, download files, working with [arrays] & {dictionaries}, f'{.format(**variables)}', edit Word documents, integrate Windows OS features, and much more|
 |C++|2020|File handling, working with json & variables, OS specific features, cross-platform code, porting code from python, and more|
-|Python|2017-2020|File handling, make web requests, download files, working with [arrays] & {dictionaries}, f'{.format(**variables)}', edit Word documents, integrate Windows OS features, and much more|
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
