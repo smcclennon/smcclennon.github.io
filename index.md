@@ -16,7 +16,7 @@ b3_url: update/api
 script1: toggleDiv
 ---
 # About Myself {#about}
-I'm an A-level student in the UK that became aware how much data is tracked and stored in an insecure way, whilst I was running and maintaining multiple servers.
+I'm an A-level student in the UK who became aware how much data is tracked and stored in an insecure way, whilst I was running and maintaining multiple servers.
 
 Curiosity compelled me to investigate all the services I used, which then revealed how oblivious the general public is to the large volumes of data being collected by companies insidiously, data that is shared, used, abused, and stolen far too easily when not effectively protected. Consequently, my interest in digital privacy, security, and encryption grew.
 
