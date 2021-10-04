@@ -16,7 +16,7 @@ b3_url: update/api
 script1: toggleDiv
 ---
 # About Myself {#about}
-I'm an A-level student in the UK that became aware how much data is tracked and stored in an insecure way, whilst I was running and maintaining multiple servers.
+I'm an A-level student in the UK who became aware how much data is tracked and stored in an insecure way, whilst I was running and maintaining multiple servers.
 
 Curiosity compelled me to investigate all the services I used, which then revealed how oblivious the general public is to the large volumes of data being collected by companies insidiously, data that is shared, used, abused, and stolen far too easily when not effectively protected. Consequently, my interest in digital privacy, security, and encryption grew.
 
@@ -48,6 +48,21 @@ However in 2020, I ported one of my [python projects](https://github.com/smcclen
 |C++|2020|File handling, working with json & variables, OS specific features, cross-platform code, porting code from python, and more|
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
+
+### CyberFirst Advanced (2021) {#cf}
+This is by far the most fun I've ever had on a cyber security course.
+
+### Fujitsu WorkX (2021) {#fujitsu-wex}
+I spent my holiday doing this
+
+### Teaching 9 year olds Scratch (2021) {#scratch}
+I guided year 5 and 6 children learn how to use Scratch.
+
+It was incredible seeing the solution to the challenges *click* in their heads.
+
+Once they completed the challenges, they managed to make the program have a graphical seizure and cause the computer to slow down due to spawning so many objects.
+
+Future pentesters!
 
 ### Cisco Work Experience (2020) {#cisco-wex}
 I absolutely loved it. It was a little different this year, as it was done virtually, so unfortunately I was unable to visit the Cisco offices. However, the experience was still very enjoyable and insightful.
