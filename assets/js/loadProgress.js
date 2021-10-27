@@ -19,7 +19,9 @@ window.onload = function() {
   // Make the page content div visible once the page has fully loaded
   // Hiding whilst page is loading prevents messy half-loaded content from being visible
   // This also means the page content would never become visible if javascript was disabled
-  document.getElementById('all-content').style.display = 'block';
+
+  // Disabled to enable compatibility with NoScript
+  // document.getElementById('all-content').style.display = 'block';
   
   // Stop the loading bar
   NProgress.done();
