@@ -28,11 +28,13 @@ b3_url: ../update/api
 
 <h2 align="center">Fun</h2>
 
+[gh_ous]: https://github.com/smcclennon/ous
 [gh_primer]: https://github.com/smcclennon/Primer
 [gh_ltfo]: https://github.com/smcclennon/LTFO
 [gh_sri]: https://github.com/smcclennon/SRI
 
 |Project|Date|OS|About
+|[Office365 User Scraper][gh_ous]|2022|Chromium/Firefox|Reverse engineer the Microsoft Office 365 Outlook webapp API to export everyone in your Office 365 organisation into a `.csv` in seconds, straight from your browser, without any admin tools.
 |[Primer][gh_primer]|2019|Windows, MacOS, Linux|Brute-force prime number generator.|
 |[LTFO][gh_ltfo]|2019|Windows|Duplicates a file into all subdirectories on the specified drive.|
 |[SRI][gh_sri]|2020|Windows, MacOS, Linux|Replicates itself with unique filenames. Ability to execute the replicated files, which usually ends with the machine crashing.|
