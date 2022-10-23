@@ -49,6 +49,9 @@ My favourite language is Python due to how quickly it can get things done.
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
+### National Cyber Awards 2022 {nca}
+I was nominated as a finalist for my grade A Qufaro CyberEPQ. It was an amazing black-tie awards ceremony at the Novotel Hotel where I was able to network with interesting and like-minded industry professionals.
+
 ### Cisco Work Experience (2020) {#cisco-wex}
 I absolutely loved it. It was a little different this year, as it was done virtually, so unfortunately I was unable to visit the Cisco offices. However, the experience was still very enjoyable and insightful.
 
