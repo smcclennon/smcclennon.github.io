@@ -41,12 +41,11 @@ Cyber-attacks are commonly made possible due to security breaches caused by naiv
 ## My Experience {#experience}
 My favourite language is Python due to how quickly it can get things done.
 
-However in 2020, I ported one of my [python projects](https://github.com/smcclennon/Primer) over to C++ for the performance benefits of the language. This significantly increased my knowledge and understanding of C++.
-
 |Language|Experience|Abilities|
 |:-|:-|:-|
-|Python|2017-2021|File handling, make web requests, download files, working with [arrays] & {dictionaries}, f'{.format(**variables)}', edit Word documents, integrate Windows OS features, and much more|
-|C++|2020|File handling, working with json & variables, OS specific features, cross-platform code, porting code from python, and more|
+|Python|2017-2022|File handling, web requests, download files, working with [data] {structures}, threading, edit Word documents, integrate OS-specific features, and much more|
+|JavaScript|2022|Reverse engineering APIs, threading, web scraping, mobile apps|
+|C++|2020|File handling, working with json & variables, OS-specific features, cross-platform code, porting code from python|
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
 
