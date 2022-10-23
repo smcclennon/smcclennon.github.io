@@ -27,6 +27,7 @@ Cyber-attacks are commonly made possible due to security breaches caused by naiv
 ¹*[ACRCloud blog](https://blog.acrcloud.com/how-a-15-year-old-created-a-music-recognition-service-in-less-than-a-day-with-acrcloud) is down, hence the link to the Wayback Machine*
 
 ## Qualifications
+- [Qufaro CyberEPQ 2022](https://cyberepq.org.uk)
 - [Palo Alto Networks Cybersecurity Gateway](https://www.paloaltonetworks.com/services/education/academy)
 - [Qufaro CyberEPQ Headstart in Cyber Security](https://cyberepq.org.uk)
 - [Cisco Introduction to Cybersecurity](https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity) -- ([View Certificate](https://www.credly.com/badges/c9eed575-3bd6-4b5e-8046-1b8ce1a721ab))
@@ -40,14 +41,16 @@ Cyber-attacks are commonly made possible due to security breaches caused by naiv
 ## My Experience {#experience}
 My favourite language is Python due to how quickly it can get things done.
 
-However in 2020, I ported one of my [python projects](https://github.com/smcclennon/Primer) over to C++ for the performance benefits of the language. This significantly increased my knowledge and understanding of C++.
-
 |Language|Experience|Abilities|
 |:-|:-|:-|
-|Python|2017-2021|File handling, make web requests, download files, working with [arrays] & {dictionaries}, f'{.format(**variables)}', edit Word documents, integrate Windows OS features, and much more|
-|C++|2020|File handling, working with json & variables, OS specific features, cross-platform code, porting code from python, and more|
+|Python|2017-2022|File handling, web requests, download files, working with [data] {structures}, threading, edit Word documents, integrate OS-specific features, and much more|
+|JavaScript|2022|Reverse engineering APIs, threading, web scraping, mobile apps|
+|C++|2020|File handling, working with json & variables, OS-specific features, cross-platform code, porting code from python|
 |Java|2019|System.out.println("Hello World!");, and variable management|
 |Windows Scripting (.bat)|2015-2018|Initial coding experience. Driver management with devcon, echo file >> management, set /a %variable% management and custom troubleshooting.|
+
+### National Cyber Awards 2022 {nca}
+I was nominated as a finalist for my grade A Qufaro CyberEPQ. It was an amazing black-tie awards ceremony at the Novotel Hotel where I was able to network with interesting and like-minded industry professionals.
 
 ### Cisco Work Experience (2020) {#cisco-wex}
 I absolutely loved it. It was a little different this year, as it was done virtually, so unfortunately I was unable to visit the Cisco offices. However, the experience was still very enjoyable and insightful.
