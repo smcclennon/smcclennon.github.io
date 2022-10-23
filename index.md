@@ -27,6 +27,7 @@ Cyber-attacks are commonly made possible due to security breaches caused by naiv
 ¹*[ACRCloud blog](https://blog.acrcloud.com/how-a-15-year-old-created-a-music-recognition-service-in-less-than-a-day-with-acrcloud) is down, hence the link to the Wayback Machine*
 
 ## Qualifications
+- [Qufaro CyberEPQ 2022](https://cyberepq.org.uk)
 - [Palo Alto Networks Cybersecurity Gateway](https://www.paloaltonetworks.com/services/education/academy)
 - [Qufaro CyberEPQ Headstart in Cyber Security](https://cyberepq.org.uk)
 - [Cisco Introduction to Cybersecurity](https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity) -- ([View Certificate](https://www.credly.com/badges/c9eed575-3bd6-4b5e-8046-1b8ce1a721ab))
