@@ -9,11 +9,11 @@ date : 01-01-2022
 - Custom port: `ssh username@hostname.com -p 1234`
 - Local port forwarding: `ssh -L client_port:localhost:server_port -L 9999:localhost:80`
 
-  > _Forwards specified server ports to client through ssh tunnel. Client port forwarded to can be customised. Multiple_ `-L` _arguments can be used._
+> _Forwards specified server ports to client through ssh tunnel. Client port forwarded to can be customised. Multiple_ `-L` _arguments can be used._
 
 * Dynamic port forwarding: `ssh -D 80`
 
-  > _Forwards all server ports to client through the ssh tunnel, does not work if port is already in use on the client_
+> _Forwards all server ports to client through the ssh tunnel, does not work if port is already in use on the client_
 
 # Screen
 
@@ -29,7 +29,7 @@ date : 01-01-2022
 - List images: `podman images`
 - Run image: `podman run -dt image_repo/image_id`
 
-  > `-d` Detatch, `-t` Create TTY interface
+> `-d` Detatch, `-t` Create TTY interface
 
 - Attach: `podman attach container_id`
 - Detatch: `Ctrl+p, Ctrl+q`
@@ -48,11 +48,11 @@ date : 01-01-2022
 - List zone information: `firewall-cmd --zone=public --list-all`
 - Add port to zone: `firewall-cmd --zone=internal --add-port 80/tcp`
 
-  > _This change will apply immediately, but will not persist once the firewall is reloaded_
+> _This change will apply immediately, but will not persist once the firewall is reloaded_
 
 - Make change permanently: `firewall-cmd --add-port 1234 --permanent`
 
-  > _Changes won’t be applied to the live firewall. Apply them by reloading the firewall with_ `firewall-cmd --reload`
+> _Changes won’t be applied to the live firewall. Apply them by reloading the firewall with_ `firewall-cmd --reload`
 
 - Add service to zone: `firewall-cmd --zone=public --add-service=syncthing`
 
@@ -85,25 +85,25 @@ date : 01-01-2022
 - chmod -R g+w /your/directory
 - <https://www.guru99.com/file-permissions.html>
 
-  > 4 = Read, 2 = Write, 1 = Execute
-  >
-  > 5=rx, 6=rw, 7=rwx
-  >
-  > Execute permissions are used to traverse a directory
+> 4 = Read, 2 = Write, 1 = Execute
+>
+> 5=rx, 6=rw, 7=rwx
+>
+> Execute permissions are used to traverse a directory
 
 ## Online users
 
 - List online user PTS: `who`
 
-  > shiraz pts/0 2022-01-02 20:55 (192.168.1.11)
+> shiraz pts/0 2022-01-02 20:55 (192.168.1.11)
 
 - Find user PID from PTS: `ps -dN|grep pts/1`
 
-  > 1885493 pts/1 00:00:00 zsh
+> 1885493 pts/1 00:00:00 zsh
 
 - Logged in usernames: `users`
 
-  > shiraz shiraz
+> shiraz shiraz
 
 - Detailed list of login history: `last`
 
