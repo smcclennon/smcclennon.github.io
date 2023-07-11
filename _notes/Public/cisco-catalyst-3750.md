@@ -22,7 +22,10 @@ date : 10-07-2023
 
 ## Factory reset switch
 
-Press and hold the mode button until the LEDs stop blinking (~10 seconds).
+Press and hold the 'MODE' button for ~10 seconds. 
+
+
+Lights should start blinking after 3 seconds, and stop blinking 7 seconds later. Release button once they stop blinking.
 
 ---
 
@@ -104,11 +107,11 @@ Source: [Configuring Switch-Based Authentication](https://www.cisco.com/c/en/us/
 
 ```
 hostname# configure terminal
-hostname(config)# hostname Switch
+hostname(config)# hostname Switch  ! Should already have a hostname by default
+Switch(config)# ip domain name Cisco
 Switch(config)# crypto key generate rsa general-keys modulus 2048
 Switch(config)# line vty 0 4  ! select virtual terminal lines 0-4
 Switch(config-line)# login local  ! Disable tacacs authentication so local passwords/secrets work
-Switch(config-line)# end  ! return to privileged exec mode
 ```
 
 #### Hardening
@@ -116,15 +119,15 @@ Switch(config-line)# end  ! return to privileged exec mode
 Prevent telnet connections on vty 0-4. Only allow ssh:
 
 ```
-Switch# configure terminal
-Switch(config)# transport input ssh
+Switch(config-line)# transport input ssh
 ```
 
 Prevent telnet and ssh connections on vty 5-15
 
 ```
+Switch(config-line)# exit  ! exit vty conf 0-4
 Switch(config)# line vty 5 15
-Switch(config)# transport input none
+Switch(config-line)# transport input none
 Switch(config-line)# end  ! return to privileged exec mode
 ```
 
