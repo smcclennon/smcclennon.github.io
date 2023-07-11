@@ -8,7 +8,7 @@ date : 10-07-2023
 
 - [Cisco Catalyst 3750 Series Switches - Cisco](https://www.cisco.com/c/en/us/support/switches/catalyst-3750-series-switches/series.html)
 - [Getting Started Guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/hardware/quick/guide/3750GSG3.html)
-- [Configuring Switch-Based Authentication](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/12-2_52_se/configuration/guide/3750scg/swauthen.html#wp1227177)
+- [Software Configuration Guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/12-2_52_se/configuration/guide/3750scg.html)
 
 ### Command aliases
 
@@ -143,4 +143,21 @@ OpenSSH has deprecated the algorithms and ciphers which this switch tries to use
 
 ```
 $ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedKeyTypes=+ssh-rsa -oCiphers=+aes256-cbc cisco@10.20.200.1
+```
+
+---
+
+## Change switch IP
+
+Source: [Assigning the Switch IP Address and Default Gateway](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3750/software/release/12-2_52_se/configuration/guide/3750scg/swipaddr.html)
+
+```
+Switch# configure terminal
+Switch(config)# interface Vlan1
+
+! Static
+Switch(config-if)# ip address 10.20.30.40 255.255.255.0
+
+! DHCP
+Switch(config-if)# ip address dhcp
 ```
