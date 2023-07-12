@@ -161,3 +161,36 @@ Switch(config-if)# ip address 10.20.30.40 255.255.255.0
 ! DHCP
 Switch(config-if)# ip address dhcp
 ```
+
+## Clear err-disabled
+
+Check interface status
+
+```
+Switch# show interfaces status
+...
+Gi1/0/50                     err-disabled 1            auto   auto unknown
+Gi1/0/51                     err-disabled 1            auto   auto unknown
+Gi1/0/52                     err-disabled 1            auto   auto unknown
+```
+
+Clear error and restart interface
+
+```
+Switch# clear errdisable interface gigabitEthernet 1/0/52 vlan 1
+Switch# configure terminal
+Switch(config)# interface GigabitEthernet 1/0/52
+Switch(config-if)# shutdown  ! interface down
+Switch(config-if)# no shutdown  ! interface up
+```
+
+Check interface status
+
+```
+Switch(config-if)# end
+Switch# show interfaces status
+...
+Gi1/0/50                     err-disabled 1            auto   auto unknown
+Gi1/0/51                     err-disabled 1            auto   auto unknown
+Gi1/0/52                     notconnect   1            auto   auto unknown
+```
