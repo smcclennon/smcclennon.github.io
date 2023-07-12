@@ -1,0 +1,142 @@
+---
+title : Cisco Nexus 5672UP Switch Configuration
+feed: show
+date : 12-07-2023
+---
+
+## Documentation
+
+- [Cisco Nexus 5000 Series Switches](https://www.cisco.com/c/en/us/support/switches/nexus-5000-series-switches/series.html)
+  
+- [Cisco Nexus 5000 Series Switches - Configuration Guides](https://www.cisco.com/c/en/us/support/switches/nexus-5000-series-switches/products-installation-and-configuration-guides-list.html)
+  
+- [Cisco Nexus 5600 Series Switches Interfaces Command Reference](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/interfaces/command/cisco_nexus5600_interfaces_command_ref.html)
+  
+- [Cisco Nexus 5600 Series NX-OS System Management Command Reference - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/system_management/command/cisco_nexus5600_system_management_command_ref.html)
+  
+- [Cisco Nexus 5600 Series NX-OS Unicast Routing Command Reference - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/command/reference/unicast/7x/n5600-ucast-cmd.html)
+  
+- [Cisco Nexus 5600 Platform 10-Gbps Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/datasheet-c78-730760.html)
+  
+- [Cisco Nexus 5600 Platform 40-Gbps Switches Data Sheet - Cisco]([Cisco Nexus 2000 and Nexus 5500 Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html))
+  
+
+## Recover admin password on Cisco NX-OS
+
+Source: [Password Recovery Procedure for Cisco NX-OS](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/password_recovery/b_nx_os_pwr/nx_os_pw.html)
+
+1. Establish serial session with the switch
+  
+2. Power cycle device by disconnecting/reconnecting power supplies
+  
+3. Spam `Ctrl+C` and `CTRL+L` when the switch reaches this part of the boot sequence:
+  
+
+```
+Executing Mod 1 2 SEEPROM Test....done
+Mod 1 2 Post Completed Successfully
+Mod 3 Post Completed Successfully
+POST is completed
+Checking all filesystems....r. done.
+
+Ctrl+C Ctrl+] Ctrl+C Ctrl+L
+switch(boot)#
+```
+
+4. Reset admin password.
+  
+
+```
+switch(boot)# configure terminal
+switch(boot-config)# admin-password my_new_admin_password
+WARNING! Remote Authentication for login through console has been
+disabled
+switch(boot-config)# exit
+switch(boot)# 
+```
+
+5. Find the name of the system software image you wish to boot from
+  
+
+```
+switch(boot)# dir
+switch(boot)# dir bootflash
+```
+
+6. Boot from your desired image
+  
+
+```
+switch(boot)# load bootflash:nx-os.bin
+```
+
+7. Test your new login details
+  
+
+```
+switch login: admin
+Password: my_new_admin_password
+switch#
+```
+
+8. Save your changes
+  
+
+```
+switch# copy running-config startup-config
+```
+
+## Clear configuration
+
+You will need to use a serial connection on the switch's next boot to reconfigure it.
+
+```
+switch# write erase
+```
+
+To undo your changes, use:
+
+```
+switch# copy running-config startup-config
+```
+
+To apply your configuration erasure, reboot the switch.
+
+```
+switch# reboot
+```
+
+### Next boot
+
+On boot up, you will receive this prompts to reconfigure the switch:
+
+```
+Abort Power On Auto Provisioning and continue with normal setup ?(yes/no)[n]: yes
+Disabling PoAP service, please wait ...
+
+
+
+         ---- System Admin Account Setup ----
+
+
+Do you want to enforce secure password standard (yes/no): yes
+
+  Enter the password for "admin": 
+  Confirm the password for "admin": 
+
+         ---- Basic System Configuration Dialog ----
+
+This setup utility will guide you through the basic configuration of
+the system. Setup configures only enough connectivity for management
+of the system.
+
+Please register Cisco Nexus 6000 Family devices promptly with your
+supplier. Failure to register may affect response times for initial
+service calls. Nexus devices must be registered to receive entitled 
+support services.
+
+Press Enter at anytime to skip a dialog. Use ctrl-c at anytime
+to skip the remaining dialogs.
+
+Would you like to enter the basic configuration dialog (yes/no): yes
+```
