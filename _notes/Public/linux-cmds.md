@@ -180,3 +180,7 @@ date : 01-01-2022
 - Print last 10 lines: `tail -n 10 file`
 - Select 1st column: `cut -c1`
 
+# Grubby
+- Show info for specific kernel (index '0', which is usually the latest & default): `sudo grubby --info=0`
+- Show logs during early boot on all installed kernels: `sudo grubby --update-kernel=ALL --remove-args=' rhgb quiet'
+- Boot to a different kernel ('2') on the next boot only: `sudo grubby savedefault --default=2 --once`
