@@ -114,10 +114,7 @@ On boot up, you will receive this prompts to reconfigure the switch:
 Abort Power On Auto Provisioning and continue with normal setup ?(yes/no)[n]: yes
 Disabling PoAP service, please wait ...
 
-
-
          ---- System Admin Account Setup ----
-
 
 Do you want to enforce secure password standard (yes/no): yes
 
@@ -125,18 +122,6 @@ Do you want to enforce secure password standard (yes/no): yes
   Confirm the password for "admin": 
 
          ---- Basic System Configuration Dialog ----
-
-This setup utility will guide you through the basic configuration of
-the system. Setup configures only enough connectivity for management
-of the system.
-
-Please register Cisco Nexus 6000 Family devices promptly with your
-supplier. Failure to register may affect response times for initial
-service calls. Nexus devices must be registered to receive entitled 
-support services.
-
-Press Enter at anytime to skip a dialog. Use ctrl-c at anytime
-to skip the remaining dialogs.
 
 Would you like to enter the basic configuration dialog (yes/no): yes
 ```
