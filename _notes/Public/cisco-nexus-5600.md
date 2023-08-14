@@ -11,8 +11,8 @@ date : 12-07-2023
 - [Cisco Nexus 5600 Series Switches Interfaces Command Reference](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/interfaces/command/cisco_nexus5600_interfaces_command_ref.html)
 - [Cisco Nexus 5600 Series NX-OS System Management Command Reference - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/system_management/command/cisco_nexus5600_system_management_command_ref.html)
 - [Cisco Nexus 5600 Series NX-OS Unicast Routing Command Reference - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/command/reference/unicast/7x/n5600-ucast-cmd.html)
-- [Cisco Nexus 5600 Platform 10-Gbps Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/datasheet-c78-730760.html)
-- [Cisco Nexus 5600 Platform 40-Gbps Switches Data Sheet - Cisco]([Cisco Nexus 2000 and Nexus 5500 Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html))
+- [Cisco Nexus 5000 10-Gbps Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/datasheet-c78-730760.html)
+- [Cisco Nexus 5000 40-Gbps Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html)
   
 
 ## Recover admin password on Cisco NX-OS
