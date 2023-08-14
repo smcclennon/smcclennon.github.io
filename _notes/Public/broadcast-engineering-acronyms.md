@@ -4,8 +4,6 @@ feed: show
 date : 14-08-2023
 ---
 
-## Broadcast Engineering Acronyms
-
 | Acronym | Name | Description |
 | --- | --- | --- |
 | ABB | Automatic Black Balance |  |
