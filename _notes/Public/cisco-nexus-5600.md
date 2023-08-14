@@ -1,7 +1,7 @@
 ---
 title : Cisco Nexus 5672UP Switch Configuration
 feed: show
-date : 12-07-2023
+date : 14-08-2023
 ---
 
 ## Documentation
