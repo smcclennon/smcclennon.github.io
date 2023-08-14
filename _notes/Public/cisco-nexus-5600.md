@@ -13,7 +13,13 @@ date : 12-07-2023
 - [Cisco Nexus 5600 Series NX-OS Unicast Routing Command Reference - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/command/reference/unicast/7x/n5600-ucast-cmd.html)
 - [Cisco Nexus 5000 10-Gbps Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/datasheet-c78-730760.html)
 - [Cisco Nexus 5000 40-Gbps Switches Data Sheet - Cisco](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-5000-series-switches/data_sheet_c78-618603.html)
-  
+
+### Command aliases
+- `con`(figure)
+- `sh`(ow) `ru`(nning-config) / `int`(erface) `st`(atus)
+- `int`(erface) `e`(th)`1/1`
+
+<br>
 
 ## Recover admin password on Cisco NX-OS
 
