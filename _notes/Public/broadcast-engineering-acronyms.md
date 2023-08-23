@@ -1,7 +1,7 @@
 ---
 title : Broadcast Engineering Acronyms
 feed: show
-date : 14-08-2023
+date : 23-08-2023
 ---
 
 | Acronym | Name | Description |
