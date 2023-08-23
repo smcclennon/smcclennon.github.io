@@ -5,8 +5,9 @@ date : 23-08-2023
 ---
 
 ## GUI
+
 | Executable | Name | Purpose |
-|-|-|-|
+| --- | --- | --- |
 | `mmc.exe` | Microsoft Management Console | Launch 'Device Manager', 'Group Policy Editor', 'Services', 'Task Scheduler' |
 | `devmgmt.msc` | Device Manager | View and manage device hardware settings and driver software installed on your computer |
 | `gpedit.msc` | Group Policy Editor | Edit the local Group Policy Objects stored on a computer |
@@ -16,7 +17,7 @@ date : 23-08-2023
 ## CLI
 
 | Command | Purpose |
-|-|-|
+| --- | --- |
 | `dism /Online /Cleanup-image /Restorehealth` | Scan the image for component store corruption and perform repair operations automatically |
 | `sfc /scannow` | Scans integrity of all protected system files and repairs files with problems when possible |
 | `shutdown -t 0 -r -o` | Windows Recovery |
