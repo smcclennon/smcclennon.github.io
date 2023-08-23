@@ -9,6 +9,7 @@ date : 14-08-2023
 | ABB | Automatic Black Balance |  |
 | APR | Automatic Pixel Restoration | Sony's automatic RPN correction system |
 | ARIA | Automatic Restoration of Illumination Attenuation | Sony's system to correct the F-drop and peripheral light loss by the lens in various zoom positions. |
+| ATW | Automatic Tracing White | 'Auto iris' for white balance |
 | CAR | Central Apparatus Room | Server room housing noisy equipment such as CCUs and video routers |
 | CCU | Camera Control Unit | Power a camera and handle data sent to and from it |
 | CRT | Cathode Ray Tube |  |
