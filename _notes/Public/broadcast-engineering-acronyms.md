@@ -24,6 +24,7 @@ date : 23-08-2023
 | RPN | Random Point Noise | Bad pixel misbehaving. Correct manually or perform APR |
 | RTS | Royal Television Society |  |
 | SMPTE | Society of Motion Picture and Television Engineers | America's broadcast standards organisation |
+| TSG | Test Signal Generator | Electronically generated test pattern used for calibrating or troubleshooting the downstream signal path. Also referred to as a Test Pattern Generator (TPG)</br>[[Test card]](https://en.wikipedia.org/wiki/Test_card) [[EBU bars]](https://en.wikipedia.org/wiki/EBU_color_bars) [[SMPTE bars]](https://en.wikipedia.org/wiki/SMPTE_color_bars) |
 | TD  | Technical Director | Operates multi-cam switcher, according to the show director's production cues |
 | VL-90HP | V-lock 90W/h | V-lock 14.4V 90-W/h Li-on battery for camcorders |
 | VT  | Video Tape | These days it’s a file stored on a server |
