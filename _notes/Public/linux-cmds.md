@@ -156,7 +156,7 @@ date : 01-01-2022
 
 > Usage: `dnf history | grep install | grep -v akmods`
 
-- Compare command outputs: 'diff <(command1) <(command2)`
+- Compare command outputs: `diff <(command1) <(command2)`
 
 # GPU
 
