@@ -147,7 +147,7 @@ date : 01-01-2022
 - Match previous token one or more times: `+`
 - Match previous token zero or more times: `*`
 
-## Grep
+## Text search (grep)
 
 - After context: `-A 5`
 - Before context: `-B 5`
@@ -155,6 +155,8 @@ date : 01-01-2022
 - Exclude: `-v string_to_exclude`
 
 > Usage: `dnf history | grep install | grep -v akmods`
+
+- Compare command outputs: 'diff <(command1) <(command2)`
 
 # GPU
 
