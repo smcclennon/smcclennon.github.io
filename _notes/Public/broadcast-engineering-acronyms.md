@@ -31,7 +31,7 @@ date : 07-04-2024
 | [SFP](https://en.wikipedia.org/wiki/Small_Form-factor_Pluggable) | Small Form-factor Pluggable | Compact, hot-pluggable, modular networking transceiver |
 | SMPTE | Society of Motion Picture and Television Engineers | America's broadcast standards organisation |
 | [SNG](https://en.wikipedia.org/wiki/Electronic_news_gathering) | Satellite News Gathering | Van with a satellite transmitter dish on top. AKA ENG |
-| [ST](https://en.wikipedia.org/wiki/Optical_fiber_connector#Types) | Straight Tip connector (fibre optic) | AKA Bayonet Fibre Optic Connector (BFOC) for it's bayonet locking mechanism similar to the BNC |
+| [ST](https://en.wikipedia.org/wiki/Optical_fiber_connector#Types) | Straight Tip connector | AKA Bayonet Fibre Optic Connector (BFOC) for it's bayonet locking mechanism similar to the BNC |
 | TSG | Test Signal Generator | Electronically generated test pattern used for calibrating or troubleshooting the downstream signal path. Also referred to as a Test Pattern Generator (TPG) — [Test card](https://en.wikipedia.org/wiki/Test_card), [EBU bars](https://en.wikipedia.org/wiki/EBU_color_bars), [SMPTE bars](https://en.wikipedia.org/wiki/SMPTE_color_bars) |
 | TD  | Technical Director | Operates multi-cam switcher, according to the show director's production cues |
 | VL-90HP | V-lock 90W/h | V-lock 14.4V 90-W/h Li-on battery for camcorders |
