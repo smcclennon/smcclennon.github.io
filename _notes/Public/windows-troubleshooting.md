@@ -28,6 +28,7 @@ date : 23-08-2023
 | `oobe\bypassnro` | Press `Shift + F10` within Windows 11 installer to launch terminal and skip Microsoft account requirement with this command |
 
 ## Powershell
+
 | Command | Purpose |
 | --- | --- |
 | `Get-SmbConnection` | List SMB network shares more reliably than via `net use` |
