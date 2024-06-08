@@ -111,7 +111,7 @@ date : 08-06-2024
 
 - Backup config file: `rename .conf ".conf_backup" /etc/nginx/conf.d/ptero.conf`
 - Unbackup config file: `rename _backup ““ /etc/nginx/conf.d/ptero.conf`
- Find an indexed file quickly: `locate filename` (Note: `locate` relies on a pre-built database, which can be updated using `updatedb` to include recent files)
+- Find an indexed file quickly: `locate filename` (Note: `locate` relies on a pre-built database, which can be updated using `updatedb` to include recent files)
 
 # Grub on RedHat
 
