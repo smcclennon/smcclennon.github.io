@@ -1,7 +1,7 @@
 ---
 title : Handy Linux Commands
 feed: show
-date : 01-01-2022
+date : 08-06-2024
 ---
 
 # SSH
@@ -111,6 +111,7 @@ date : 01-01-2022
 
 - Backup config file: `rename .conf ".conf_backup" /etc/nginx/conf.d/ptero.conf`
 - Unbackup config file: `rename _backup ““ /etc/nginx/conf.d/ptero.conf`
+- Find an indexed file quickly: `locate filename`
 
 # Grub on RedHat
 
@@ -181,8 +182,24 @@ date : 01-01-2022
 - Print first 10 lines: `head -n 10 file`
 - Print last 10 lines: `tail -n 10 file`
 - Select 1st column: `cut -c1`
+- Monitor command output: `watch -n1 lspci`
+
+> Every 1 second, clear screen and print output of `lspci`
 
 # Grubby
+
 - Show info for specific kernel (index '0', which is usually the latest & default): `sudo grubby --info=0`
 - Show logs during early boot on all installed kernels: `sudo grubby --update-kernel=ALL --remove-args=' rhgb quiet'
 - Boot to a different kernel ('2') on the next boot only: `sudo grubby savedefault --default=2 --once`
+
+# Networking
+
+- Overview on connection activity: `sudo iftop`
+- Network manager: `nmcli`
+
+# Help
+
+- Command description: `whatis systemd`
+- Command manuals: `man systemd`
+- Binary locations: `whereis systemd`
+- Search man pages: `apropos wireless`
