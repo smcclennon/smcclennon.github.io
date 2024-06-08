@@ -34,3 +34,5 @@ date : 08-06-2024
 | Command | Purpose |
 | --- | --- |
 | `Get-SmbConnection` | List SMB network shares more reliably than via `net use` |
+
+.
