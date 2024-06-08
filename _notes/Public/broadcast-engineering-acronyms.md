@@ -18,6 +18,7 @@ date : 07-04-2024
 | EBU | European Broadcasting Union | Europe's broadcast standards organisation |
 | ENG | Electronic News Gathering | See 'SNG' for more details |
 | IBC | International Broadcasting Convention | September trade show in Amsterdam attracting 37,000 attendees |
+| ISDN | Integrated Services Digital Network |  |
 | [LC](https://en.wikipedia.org/wiki/Optical_fiber_connector#Types) | Little Connector | Small high-density square fibre optic connector. Two can fit into one duplex SFP |
 | MCR | Master Control Room | AKA Lines Control Room (LCR) |
 | NAB | National Association of Broadcasters | Spring trade show in Las Vegas attracting 100,000 attendees |
