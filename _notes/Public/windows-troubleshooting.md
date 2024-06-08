@@ -1,7 +1,7 @@
 ---
 title : Windows Troubleshooting
 feed: show
-date : 23-08-2023
+date : 08-06-2024
 ---
 
 ## GUI
@@ -13,6 +13,8 @@ date : 23-08-2023
 | `gpedit.msc` | Group Policy Editor | Edit the local Group Policy Objects stored on a computer |
 | `services.msc` | Services | Start, stop, and configure Windows services |
 | `taskschd.exe` | Task Scheduler | Schedule computer tasks to run automatically |
+| `lusrmgr.msc` | Local user manager | Manage local users and groups |
+| `systempropertiesadvanced` | System properties advanced | Manage hostname, domain, workgroup |
 
 ## CLI
 
