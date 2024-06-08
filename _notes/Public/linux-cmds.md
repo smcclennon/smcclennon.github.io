@@ -184,7 +184,7 @@ date : 08-06-2024
 - Select 1st column: `cut -c1`
 - Monitor command output: `watch -n1 lspci`
 
-> Every 1 second, clear screen and print output of `lspci`
+> Every 1 second, clear screen and print output of `lspci` (`-n1` specifies the interval in seconds)
 
 # Grubby
 
