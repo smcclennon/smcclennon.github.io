@@ -35,4 +35,5 @@ date : 08-06-2024
 | --- | --- |
 | `Get-SmbConnection` | List SMB network shares more reliably than via `net use` |
 
-.
+- Eject optical disc tray: `powershell (New-Object -com "WMPlayer.OCX.7").cdromcollection.item(0).eject()`
+
