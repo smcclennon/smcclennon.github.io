@@ -1,7 +1,7 @@
 ---
 title : Windows Troubleshooting
 feed: show
-date : 23-08-2023
+date : 08-06-2024
 ---
 
 ## GUI
@@ -13,6 +13,8 @@ date : 23-08-2023
 | `gpedit.msc` | Group Policy Editor | Edit the local Group Policy Objects stored on a computer |
 | `services.msc` | Services | Start, stop, and configure Windows services |
 | `taskschd.exe` | Task Scheduler | Schedule computer tasks to run automatically |
+| `lusrmgr.msc` | Local user manager | Manage local users and groups |
+| `systempropertiesadvanced` | System properties advanced | Manage hostname, domain, workgroup |
 
 ## CLI
 
@@ -28,6 +30,10 @@ date : 23-08-2023
 | `oobe\bypassnro` | Press `Shift + F10` within Windows 11 installer to launch terminal and skip Microsoft account requirement with this command |
 
 ## Powershell
+
 | Command | Purpose |
 | --- | --- |
 | `Get-SmbConnection` | List SMB network shares more reliably than via `net use` |
+
+- Eject optical disc tray: `powershell (New-Object -com "WMPlayer.OCX.7").cdromcollection.item(0).eject()`
+
