@@ -1,0 +1,108 @@
+---
+title: API v1 (deprecated)
+description: >-
+  About my API & what it's used for
+author: smcclennon
+date: 2022-03-06 00:00:00 +0000
+categories: [Blogging, Project]
+---
+
+## About My API (v1, deprecated)
+
+I created a small API for internal use which consists of links to various GitHub API pages for my respective projects. Projects with update support will use this API to get the information they need to update (such as patch notes and a download link).
+
+Information within the API pages may seem to be in a rather haphazard order, and that is because it is. I cannot adjust the order, as this would break the update code on projects using this API.
+
+The API pages will appear to have all information on the same line, separated by spaces. This is due to how GitHub.io displays unformatted html.
+
+### API Format
+
+This is the information that goes on the respective (numbered) line
+
+```
+1. Latest release details [URL, Json]
+2. Project name [String]
+3. Latest release direct download link [URL, Json]
+4. 5 latest release details [URL, Json]
+```
+
+### Information Use
+
+```
+1. Display the latest version [e.g v1.2.3]
+2. Update the current project name [backwards compatibility]
+3. Download the latest release
+4. Display up to 5 previous release patch notes
+```
+
+# API List
+
+List of my API-supported projects
+
+| ID  | Project | Version | Abilities |
+| --- | --- | --- | --- |
+| [1](1) | [LTFO](https://github.com/smcclennon/LTFO) | Up to date | Get latest release information, update project name, download the latest release, get patch notes for up to previous 5 versions |
+| [2](2) | [SMN](https://github.com/smcclennon/SMN) | Up to date | Get latest release information, update project name, download the latest release, get patch notes for up to previous 5 versions |
+| [3](3) | [Primer](https://github.com/smcclennon/Primer) | Up to date | Get latest release information, update project name, download the latest release, get patch notes for up to previous 5 versions |
+| [4](4) | [FFDB](https://github.com/smcclennon/FFDB) | Up to date | Get latest release information, update project name, download the latest release, get patch notes for up to previous 5 versions |
+| [5](5) | [Updater](https://github.com/smcclennon/Updater) | Up to date | Get latest release information, update project name, download the latest release, get patch notes for up to previous 5 versions |
+
+### LTFO's use of the API
+
+LoadCSS('../../assets/css/all-hallows-eve.css');
+
+```
+updateAttempt = 0
+print('Checking for updates...', end='\r')
+try:  # Remove previous version if just updated
+    proj = options['proj']  # Get the current project name
+    with open(f'{proj}.tmp', 'r') as content_file:  # Open the temporary file
+        oldFile = str(content_file.read())   # Get the old filename
+        # If the old version has the current filename, don't delete
+        if oldFile != os.path.basename(__file__):
+            os.remove(oldFile)  # Delete the previous version of LTFO
+    os.remove(f'{proj}.tmp')
+except:
+    pass
+while updateAttempt < 3:  # Attempt to check for updates 3 times (for unstable connections)
+    updateAttempt = updateAttempt+1
+    try:  # Try to check for updates
+        with urllib.request.urlopen("https://smcclennon.github.io/update/api/1") as url:
+            repo = []
+            for line in url.readlines():
+                repo.append(line.decode().strip())  # Read my API
+            apiLatest = repo[0]  # Latest release details
+            proj = repo[1]  # Update the project name
+            ddl = repo[2]  # Direct download
+            apiReleases = repo[3]  # List of patch notes
+        with urllib.request.urlopen(apiLatest) as url:
+            data = json.loads(url.read().decode())  # Read the GitHub API
+            latest = data['tag_name'][1:]
+        del data  # Prevent overlapping variable data
+        release = json.loads(urllib.request.urlopen(
+            apiReleases).read().decode())
+        releases = [  # Gather (up to) 5 *new* patch notes
+            (data['tag_name'], data['body'])
+            for data in release
+            if data['tag_name'][1:] > ver][::-1]  # [1:] removes "v" from "v1.2.3"
+        updateAttempt = 3
+    except:
+        latest = '0'  # If checking for updates fails, set the latest version to 0
+
+if latest > ver:
+    print('Update available!      ')
+    print(f'Latest Version: v{latest}\n')
+    for release in releases:
+        print(f'{release[0]}:\n{release[1]}\n')  # Print patch notes
+    confirm = input(str('Update now? [Y/n] ')).upper()
+    if confirm == '' or confirm == 'Y':
+        latestFilename = f'{proj} v{latest}.py'
+        # Download latest version to cwd
+        print(f'Downloading "{latestFilename}"...')
+        urllib.request.urlretrieve(ddl, latestFilename)
+        # Write the current filename to LTFO.tmp
+        f = open(f'{proj}.tmp', 'w')
+        f.write(str(os.path.basename(__file__)))  # Write the current file name to a temporary file
+        f.close()
+        os.system(f'"{latestFilename}"')  # Open latest version in the current console window
+```

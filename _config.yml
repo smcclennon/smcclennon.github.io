@@ -1,124 +1,236 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# The Site Configuration
 
-# URL is the base hostname with protocol for your site, eg http://example.com
-url: "https://www.smcclennon.com" # the base hostname & protocol for your site, e.g. http://example.com
+# Import the theme
+theme: jekyll-theme-chirpy
 
-# If you want to install this jekyll in a subpath (eg /digitalgarden) set it here. 
-# Else keep it Empty (DON'T PUT /; Keep it empty)
+# The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
+# If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
+# otherwise, the layout language will use the default value of 'en'.
+lang: en
+
+# Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: Europe/London
+
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# ↓ --------------------------
+
+title: Shiraz McClennon # the main title
+
+tagline: 📺️ Broadcast Engineering Apprentice, Cybersecurity Enthusiast 🔐 # it will display as the subtitle
+
+description: >- # used by seo meta and the atom feed
+  📺️ Broadcast Engineering Apprentice, Cybersecurity Enthusiast 🔐
+
+# Fill in the protocol & hostname for your site.
+# E.g. 'https://username.github.io', note that it does not end with a '/'.
+url: "https://www.smcclennon.com"
+
+github:
+  username: smcclennon # change to your GitHub username
+
+twitter:
+  username: # change to your Twitter username
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: Shiraz McClennon
+  email: shiraz@smcclennon.com # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/smcclennon
+    - https://github.com/smcclennon
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+
+# Site Verification Settings
+webmaster_verifications:
+  google: # fill in your Google verification code
+  bing: # fill in your Bing verification code
+  alexa: # fill in your Alexa verification code
+  yandex: # fill in your Yandex verification code
+  baidu: # fill in your Baidu verification code
+  facebook: # fill in your Facebook verification code
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+# Web Analytics Settings
+analytics:
+  google:
+    id: # fill in your Google Analytics ID
+  goatcounter:
+    id: smcclennon # fill in your GoatCounter ID
+  umami:
+    id: 36c63a10-f355-4359-ab62-7364fef499c8 # fill in your Umami ID
+    domain: https://cloud.umami.is # fill in your Umami domain
+  matomo:
+    id: # fill in your Matomo ID
+    domain: # fill in your Matomo domain
+  cloudflare:
+    id: # fill in your Cloudflare Web Analytics token
+  fathom:
+    id: # fill in your Fathom Site ID
+
+# Page views settings
+pageviews:
+  provider: goatcounter # now only supports 'goatcounter'
+
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
+#
+theme_mode: # [light | dark]
+
+# The CDN endpoint for media resources.
+# Notice that once it is assigned, the CDN url
+# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+cdn: "https://smcclennon-img.netlify.app"
+
+# the avatar on sidebar, support local or CORS resources
+avatar: "/commons/avatar.png"
+
+# The URL of the site-wide social preview image used in SEO `og:image` meta tag.
+# It can be overridden by a customized `page.image` in front matter.
+social_preview_image: # string, local or CORS resources
+
+# boolean type, the global switch for TOC in posts.
+toc: true
+
+comments:
+  # Global switch for the post-comment system. Keeping it empty means disabled.
+  provider: giscus # [disqus | utterances | giscus]
+  # The provider options are as follows:
+  disqus:
+    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances settings › https://utteranc.es/
+  utterances:
+    repo: # <gh-username>/<repo>
+    issue_term: # < url | pathname | title | ...>
+  # Giscus options › https://giscus.app
+  giscus:
+    repo: smcclennon/giscus-chirpy # <gh-username>/<repo>
+    repo_id: R_kgDOOaiy7g
+    category: Comments
+    category_id: DIC_kwDOOaiy7s4CpJrV
+    mapping: # optional, default to 'pathname'
+    strict: # optional, default to '0'
+    input_position: # optional, default to 'bottom'
+    lang: # optional, default to the value of `site.lang`
+    reactions_enabled: # optional, default to the value of `1`
+
+# Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
+assets:
+  self_host:
+    enabled: # boolean, keep empty means false
+    # specify the Jekyll environment, empty means both
+    # only works if `assets.self_host.enabled` is 'true'
+    env: # [development | production]
+
+pwa:
+  enabled: true # The option for PWA feature (installable)
+  cache:
+    enabled: true # The option for PWA offline cache
+    # Paths defined here will be excluded from the PWA cache.
+    # Usually its value is the `baseurl` of another website that
+    # shares the same domain name as the current website.
+    deny_paths:
+      # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
+      - "/update/*"
+      - "/api/*"
+
+paginate: 10
+
+# The base URL of your site
 baseurl: ""
 
-# Website Header, Description, Footer year and text. 
-# If you are deleting this, make sure you remove it from HTML files too 
-heading: smcclennon # Change this 
-content: Broadcast Engineer & Cybersecurity enthusiast
-copyright:
-  year: © 2024
-  msg: Contents under CC-BY-NC
-# Set title and content for private & broken link tooltop
-privatelinks:
-  title: Private or Broken Links
-  msg: The page you're looking for is either not available or private!
-
-# Theme level preferences
-# To enable set "enabled : true" else, use "enabled:false"
-preferences:
-  search:
-    enabled: true
-  wiki_style_link: 
-    enabled: true
-  pagepreview: 
-    enabled: true
-  backlinks:
-    enabled: true
-# To enable a homepage, change the value to true and add content to _includes/Homepage.html
-# If enable : false, notes feed will be as homepage. 
-  homepage: 
-    enabled: true ##If you need a homepage, change this to true and edit _includes/Homepage.html
-
-encoding: utf-8
-
-# Build settings
-theme: null
-plugins:
-  - jekyll-feed 
-  - jekyll-sitemap 
-  - jekyll-tidy
-    
-## Enable Collections
-## Suggested collects are "notes" "lists" and "blog"
-collections:
-    notes:
-      output: true
-      permalink: /note/:title
-    lists:
-      output: false
-      permalink: /list/:title
-
-markdown: kramdown
+# ------------ The following options are not recommended to be modified ------------------
 
 kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: katex
-  smart_quotes: ["apos", "apos", "quot", "quot"]
+  footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  
-sass:
-  style: compressed
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 defaults:
   - scope:
-      path: ""
+      path: "" # An empty string here means all files in the project
       type: posts
     values:
-      layout: Post
-      permalink: /post/:title
-      content-type: post
+      layout: post
+      comments: true # Enable comments in posts.
+      toc: true # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
   - scope:
       path: ""
-      type: notes
+      type: tabs # see `site.collections`
     values:
-      layout: Post
-      content-type: notes
+      layout: page
+      permalink: /:title/
+  - scope:
+      path: "update"
+    values:
+      sitemap: false
+  - scope:
+      path: "api"
+    values:
+      sitemap: false
 
+sass:
+  style: compressed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
 exclude:
-  - _notes/000 Inbox
-  - _notes/200 Private
-  - _notes/300 Templates
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - rollup.config.js
+  - "package*.json"
+  - "jekyll-garden"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
