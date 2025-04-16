@@ -3,7 +3,8 @@ title: Davinci Resolve Linux Troubleshooting
 description: >-
   A quick reference guide for using DaVinci Resolve on Fedora Linux, including download links and solutions for common dependency issues, such as symbol lookup errors caused by outdated libraries.
 author: smcclennon
-date: 2024-04-08 00:00:00 +0000
+date: 2024-04-07 00:46:00 +0000
+last_modified_at: 2024-04-07 00:46:00 +0000
 categories: [Note, Notes to Self]
 tags: [linux]
 ---
