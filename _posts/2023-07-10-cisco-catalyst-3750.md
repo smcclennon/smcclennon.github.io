@@ -4,7 +4,8 @@ description: >-
   A quick reference guide for configuring the Cisco Catalyst 3750 Series Switch,
   covering essential commands, user setup, SSH configuration, and troubleshooting tips.
 author: smcclennon
-date: 2023-07-10 00:00:00 +0000
+date: 2023-07-10 22:42:00 +0000
+last_modified_at: 2023-07-12 09:27:00 +0000
 categories: [Note, Notes to Self]
 tags: [networking]
 ---

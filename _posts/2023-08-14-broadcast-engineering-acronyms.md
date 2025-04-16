@@ -3,7 +3,8 @@ title: Broadcast Engineering Acronyms
 description: >-
    List of essential acronyms to help navigate the overwhelming terminology in the broadcast engineering field.
 author: smcclennon
-date: 2024-04-07 00:00:00 +0000
+date: 2023-08-14 09:16:00 +0000
+last_modified_at: 2024-06-08 19:59:00 +0000
 categories: [Note, Cheat Sheet]
 tags: [broadcast]
 ---
