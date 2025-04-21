@@ -8,7 +8,7 @@ categories: [Note, Notes to Self]
 tags: [linux]
 ---
 
-# SSH
+## SSH
 
 - Custom port: `ssh username@hostname.com -p 1234`
 - Local port forwarding: `ssh -L client_port:localhost:server_port -L 9999:localhost:80`
@@ -19,7 +19,7 @@ tags: [linux]
 
 > _Forwards all server ports to client through the ssh tunnel, does not work if port is already in use on the client_
 
-# Screen
+## Screen
 
 - List screens: `screen -list`
 - Name a new screen with a sockname: `screen -S sockname`
@@ -27,7 +27,7 @@ tags: [linux]
 - Scroll up and down in copy mode: `Ctrl+a, Esc`
 - Detatch from screen: `Ctrl+a, d`
 
-# Podman
+## Podman
 
 - Download image: `podman pull image_repo`
 - List images: `podman images`
@@ -38,7 +38,7 @@ tags: [linux]
 - Attach: `podman attach container_id`
 - Detatch: `Ctrl+p, Ctrl+q`
 
-# Firewall
+## Firewall
 
 > Most of these commands require root
 
@@ -60,7 +60,7 @@ tags: [linux]
 
 - Add service to zone: `firewall-cmd --zone=public --add-service=syncthing`
 
-# DNF
+## DNF
 
 > Most of these commands require root
 
@@ -69,12 +69,12 @@ tags: [linux]
 - Disable repo: `dnf config-manager --set-disabled repository`
 - List enabled repos: `dnf repolist`
 
-# Vim plug
+## Vim plug
 
 - Install plugin: `:PlugInstall name`
 - Update vimplug: `:PlugUpgrade`
 
-# Linux file permissions
+## Linux file permissions
 
 > Groups are used with file permissions: `chown user:group`
 
@@ -111,13 +111,13 @@ tags: [linux]
 
 - Detailed list of login history: `last`
 
-# File handling
+## File handling
 
 - Backup config file: `rename .conf ".conf_backup" /etc/nginx/conf.d/ptero.conf`
 - Unbackup config file: `rename _backup ““ /etc/nginx/conf.d/ptero.conf`
 - Find an indexed file quickly: `locate filename` (Note: `locate` relies on a pre-built database, which can be updated using `updatedb` to include recent files)
 
-# Grub on RedHat
+## Grub on RedHat
 
 - Edit grub options: `sudo vim /etc/default/grub`
 - Find grub config directory: `sudo readlink -e /etc/grub2-efi.cfg`
@@ -128,7 +128,7 @@ tags: [linux]
 
 > **_Never_** directly edit the grub configuration. Regenerate it automatically instead
 
-# String manipulation
+## String manipulation
 
 ## Regex
 
@@ -163,12 +163,12 @@ tags: [linux]
 
 - Compare command outputs: `diff <(command1) <(command2)`
 
-# GPU
+## GPU
 
 - List available GPU: `lspci -nn | egrep -i "3d|display|vga"`
 - List available GPU details: `lshw -C display`
 
-# Clear space
+## Clear space
 
 - Remove unused packages: `dnf autoremove`
 - Clear cache etc: `dnf clean all`
@@ -180,7 +180,7 @@ tags: [linux]
 - Remove unused flatpaks: `flatpak uninstall --unused --delete-data`
 - List largest dnf packages: `rpm -qa --queryformat '%10{size} - %-25{name} \t %{version` \n `' | sort -n`
 
-# Output
+## Output
 
 - Print all: `cat file`
 - Print first 10 lines: `head -n 10 file`
@@ -190,18 +190,18 @@ tags: [linux]
 
 > Every 1 second, clear screen and print output of `lspci` (`-n1` specifies the interval in seconds)
 
-# Grubby
+## Grubby
 
 - Show info for specific kernel (index '0', which is usually the latest & default): `sudo grubby --info=0`
 - Show logs during early boot on all installed kernels: `sudo grubby --update-kernel=ALL --remove-args=' rhgb quiet'
 - Boot to a different kernel ('2') on the next boot only: `sudo grubby savedefault --default=2 --once`
 
-# Networking
+## Networking
 
 - Overview on connection activity: `sudo iftop`
 - Network manager: `nmcli`
 
-# Help
+## Help
 
 - Command description: `whatis systemd`
 - Command manuals: `man systemd`

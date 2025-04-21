@@ -5,6 +5,8 @@ permalink: /robots.txt
 
 User-agent: *
 Disallow: /norobots/
+Disallow: /update/api/
+Disallow: /api/v2/
 
 User-Agent: TurnitinBot
 Disallow: /
