@@ -45,6 +45,10 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
 
+      - name: Setup IndexNow
+        # Generate files dynamically to prevent them from being leaked in public repositories.
+        run: echo ${{ secrets.INDEXNOW_KEY }} > ${{ secrets.INDEXNOW_KEY }}.txt
+
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
@@ -71,3 +75,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: indexnow-action
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: "https://smcclennon.com/sitemap.xml"
+          since: 1
+          since-unit: "week"
+          key: ${{ secrets.INDEXNOW_KEY }}
