@@ -4,7 +4,7 @@ description: >-
    List of essential acronyms to help navigate the overwhelming terminology in the broadcast engineering field.
 author: smcclennon
 date: 2023-08-14 09:16:00 +0000
-last_modified_at: 2024-06-08 19:59:00 +0000
+last_modified_at: 2025-04-19 19:30:00 +0000
 categories: [Note, Cheat Sheet]
 tags: [broadcast]
 ---
@@ -27,6 +27,7 @@ tags: [broadcast]
 | [LC][lc] | Little Connector | Small high-density square fibre optic connector. Two can fit into one duplex SFP |
 | MCR | Master Control Room | AKA Lines Control Room (LCR) |
 | NAB | National Association of Broadcasters | Spring trade show in Las Vegas attracting 100,000 attendees |
+| [NMOS][nmos] | Networked Media Open Specifications | A set of standards for interoperability of media devices and systems over IP networks in broadcast and media production, providing guidelines for device discovery, control, and data transport for seamless integration |
 | OCP | Operation Control Panel | Grass Valley's acronym for RCP |
 | PCR | Production Control Room |  |
 | RCP | Remote Control Panel | Panel which controls camera lens/paint etc via a connection to the camera or its CCU. Acronym used by Sony, Hitachi and Wikipedia |
