@@ -5,8 +5,8 @@ description: >-
 author: smcclennon
 date: 2023-08-14 09:16:00 +0000
 last_modified_at: 2025-04-19 19:30:00 +0000
-categories: [Note, Cheat Sheet]
-tags: [broadcast]
+categories: [Reference, Broadcast Engineering]
+tags: []
 ---
 
 | Acronym | Name | Description |

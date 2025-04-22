@@ -4,8 +4,9 @@ description: >-
   Quick reference for linux commands I forget too often, covering common tasks and troubleshooting tips.
 author: smcclennon
 date: 2023-07-10 01:59:00 +0000
-categories: [Note, Notes to Self]
-tags: [linux]
+last_modified_at: 2023-07-10 01:59:00 +0000
+categories: [Reference, System Administration]
+tags: [linux, command-line]
 ---
 
 ## SSH
