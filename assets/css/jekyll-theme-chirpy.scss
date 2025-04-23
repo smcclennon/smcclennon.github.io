@@ -2,9 +2,16 @@
 ---
 
 @use 'main
-{%- if jekyll.environment == 'production' -%}
+{%- if jekyll.environment == ' production ' -%}
   .bundle
 {%- endif -%}
 ';
 
 /* append your custom style below */
+
+/* Set maximum width for images inside .prompt blocks */
+blockquote[class^='prompt-'] img {
+  max-width: 97%;
+  //margin: 0 auto;  // centers the images horizontally within the prompt block.
+  //display: block;  // ensures that the images are treated as block elements, which works better with the margin auto centering.
+}
