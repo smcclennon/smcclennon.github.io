@@ -5,8 +5,8 @@ description: >-
 author: smcclennon
 date: 2023-08-23 13:43:00 +0000
 last_modified_at: 2024-06-08 13:22:00 +0000
-categories: [Note, Notes to Self]
-tags: [windows]
+categories: [Reference, System Administration]
+tags: [windows, command-line]
 ---
 
 ## GUI

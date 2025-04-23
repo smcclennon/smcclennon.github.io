@@ -4,8 +4,9 @@ description: >-
   A quick reference guide for decoding CIDR notation to subnet masks and vice versa.
 author: smcclennon
 date: 2023-09-27 04:06:00 +0000
-categories: [Note, Cheat Sheet]
-tags: [networking]
+last_modified_at: 2023-09-27 04:06:00 +0000
+categories: [Reference, Networking]
+tags: [command-line]
 ---
 
 ## Glossary
