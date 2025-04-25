@@ -98,6 +98,13 @@ script_includes:
     </div>
   </header>
 
+  {% if page.script_includes%}
+    {% for _include in page.script_includes %}
+      {% assign _include_path = _include | append: '.html' %}
+      {% include {{ _include_path }} %}
+    {% endfor %}
+  {% endif %}
+
   {% if enable_toc %}
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
       <span class="label text-truncate">{{ page.title }}</span>
