@@ -1,7 +1,7 @@
 ---
 title: How to Bulk Download Tracks from Hearthis.at
 description: >-
-  Learn how to efficiently bulk download music tracks, mixes, and podcasts from Hearthis.at using a simple browser script. This guide walks you through the process step-by-step, explaining how it works
+  Learn how to efficiently bulk download music tracks, mixes, and podcasts from Hearthis.at using a simple browser script.
 author: smcclennon
 date: 2025-04-23 00:02:00 +0000
 last_modified_at: 2025-04-23 00:02:00 +0000
