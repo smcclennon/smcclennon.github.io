@@ -49,8 +49,8 @@ not_found:
     Try using the navigation menu or search bar to find what you're looking for.
 
 notification:
-  update_found: The website has been refreshed with new content. Would you like to see the latest version?
-  update: Show Latest
+  update_found: New content available. View the latest version?
+  update: Update
 
 # ----- Posts related labels -----
 
