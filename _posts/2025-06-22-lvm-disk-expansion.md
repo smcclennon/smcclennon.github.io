@@ -39,23 +39,23 @@ sudo df -h
 
 **Example expansion output:**
 ```bash
-# Before expansion
+# Before expansion (lsblk)
 NAME                      MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
 sda                         8:0    0  140G  0 disk 
 ├─sda3                      8:3    0  138G  0 part 
   └─ubuntu--vg-ubuntu--lv 252:0    0  138G  0 lvm  /
 
-# After disk resize and rescan
+# After disk resize and rescan (lsblk)
 sda                         8:0    0  250G  0 disk 
 ├─sda3                      8:3    0  138G  0 part 
   └─ubuntu--vg-ubuntu--lv 252:0    0  138G  0 lvm  /
 
-# After growpart
+# After growpart (lsblk)
 sda                         8:0    0  250G  0 disk 
 ├─sda3                      8:3    0  248G  0 part 
   └─ubuntu--vg-ubuntu--lv 252:0    0  248G  0 lvm  /
 
-# Final result: 138G → 248G expansion
+# Final result: 138G → 248G expansion (df -h)
 Filesystem                         Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-ubuntu--lv  244G  127G  107G  55% /
 ```
