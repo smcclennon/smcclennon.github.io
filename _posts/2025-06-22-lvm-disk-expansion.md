@@ -56,6 +56,7 @@ sda                         8:0    0  250G  0 disk
   └─ubuntu--vg-ubuntu--lv 252:0    0  248G  0 lvm  /
 
 # Final result: 138G → 248G expansion
+Filesystem                         Size  Used Avail Use% Mounted on
 /dev/mapper/ubuntu--vg-ubuntu--lv  244G  127G  107G  55% /
 ```
 
@@ -70,4 +71,3 @@ By following these steps, you can successfully expand your LVM volume to utilise
 - [Red Hat: Using growpart to extend partitions](https://access.redhat.com/solutions/5540131)
 - [ServerFault: Using fdisk to show partition sizes in human-readable format](https://serverfault.com/questions/620508/using-fdisk-show-size-in-a-unit-such-as-mb-or-gb)
 - [Root Users: LVM resize - How to increase an LVM partition](https://www.rootusers.com/lvm-resize-how-to-increase-an-lvm-partition/)
-
