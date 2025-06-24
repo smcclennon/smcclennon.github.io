@@ -1,18 +1,10 @@
 name: CI
 
 on:
-  push:
+  pull_request:
     branches:
       - master
-      - "hotfix/*"
-    paths-ignore:
-      - ".github/**"
-      - "!.github/workflows/ci.yml"
-      - .gitignore
-      - "docs/**"
-      - README.md
-      - LICENSE
-  pull_request:
+      - dev
     paths-ignore:
       - ".github/**"
       - "!.github/workflows/ci.yml"
