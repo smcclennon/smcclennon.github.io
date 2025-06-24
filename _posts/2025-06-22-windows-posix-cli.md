@@ -14,7 +14,7 @@ A comprehensive command-line reference comparing equivalent utilities between Wi
 
 | Task                   | POSIX Systems               | Windows                         | Notes                                       |
 | ---------------------- | --------------------------- | ------------------------------- | ------------------------------------------- |
-| Display file contents  | `cat filename`              | `type filename`                 | Both systems support `more` and `less`      |
+| Display file contents  | `cat filename`              | `type filename`                 | Both systems support `more`                 |
 | Copy file              | `cp source dest`            | `copy source dest`              | Both support recursive copying with options |
 | Move/rename file       | `mv oldname newname`        | `move oldname newname`          | Windows also has `ren`, POSIX has `rename`  |
 | Delete file            | `rm filename`               | `del filename`                  | Windows also supports `erase`               |
