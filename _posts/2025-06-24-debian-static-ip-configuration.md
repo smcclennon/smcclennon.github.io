@@ -4,8 +4,9 @@ description: >-
   Complete guide for configuring a static IP address on Debian by replacing DHCP configuration with manual network settings.
 author: smcclennon
 date: 2025-06-24 21:56:00 +0100
+last_modified_at: 2025-06-24 21:56:00 +0100
 categories: [Guides, System Administration]
-tags: [linux, networking, debian, command-line]
+tags: [networking, linux, debian, command-line]
 ---
 
 Setting up static IP addresses on Debian servers provides consistent network connectivity essential for server environments. This guide shows you how to replace DHCP with static IP configuration.

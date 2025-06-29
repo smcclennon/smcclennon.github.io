@@ -6,7 +6,7 @@ author: smcclennon
 date: 2025-04-23 00:02:00 +0000
 last_modified_at: 2025-04-23 00:02:00 +0000
 categories: [Guides, Web Tools]
-tags: [javascript, automation, browser-tools, audio, web-scraping, downloading]
+tags: [javascript, automation, web-scraping]
 media_subpath: '/posts/20250423'
 ---
 
