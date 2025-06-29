@@ -4,8 +4,9 @@ description: >-
   Comprehensive command-line reference comparing Windows and Linux for system administration and daily tasks.
 author: smcclennon
 date: 2025-06-22 23:00:00 +0100
+last_modified_at: 2025-06-22 23:00:00 +0100
 categories: [Reference, System Administration]
-tags: [windows, linux, freebsd, posix, command-line]
+tags: [windows, linux, freebsd, macos, command-line]
 ---
 
 A comprehensive command-line reference comparing equivalent utilities between Windows and POSIX-compliant systems (Linux, macOS, FreeBSD). Organised into logical sections covering the most commonly used system administration and file management tasks for desktop and server environments.

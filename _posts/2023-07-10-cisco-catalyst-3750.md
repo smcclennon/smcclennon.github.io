@@ -7,7 +7,7 @@ author: smcclennon
 date: 2023-07-10 22:42:00 +0000
 last_modified_at: 2023-07-12 09:27:00 +0000
 categories: [Reference, Networking]
-tags: [cisco, switch, command-line]
+tags: [networking, cisco, command-line]
 ---
 
 ### Official documentation

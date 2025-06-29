@@ -6,7 +6,7 @@ author: smcclennon
 date: 2024-04-07 00:46:00 +0000
 last_modified_at: 2024-04-07 00:46:00 +0000
 categories: [Solutions, System Administration]
-tags: [linux, davinci-resolve, fedora, software-fixes, command-line]
+tags: [linux, fedora, command-line]
 ---
 
 ## Links

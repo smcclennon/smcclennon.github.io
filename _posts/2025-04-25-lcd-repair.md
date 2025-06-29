@@ -4,8 +4,9 @@ description: >-
   Use our interactive RGB cycle tool to potentially repair your affected screen. Learn what causes LCD image retention and how it differs from burn-in
 author: smcclennon
 date: 2025-04-25 02:15:00 +0000
+last_modified_at: 2025-04-25 02:15:00 +0000
 categories: [Guides, Web Tools]
-tags: [javascript, lcd]
+tags: [javascript]
 script_includes:
 - rgb-cycle
 ---

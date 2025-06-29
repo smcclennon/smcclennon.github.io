@@ -6,7 +6,6 @@ author: smcclennon
 date: 2023-09-27 04:06:00 +0000
 last_modified_at: 2023-09-27 04:06:00 +0000
 categories: [Reference, Networking]
-tags: [command-line]
 ---
 
 ## Glossary
