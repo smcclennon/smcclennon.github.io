@@ -4,8 +4,9 @@ description: >-
   Step-by-step guide for expanding an LVM volume when you've increased the virtual disk size.
 author: smcclennon
 date: 2025-06-22 21:00:00 +0100
+last_modified_at: 2025-06-22 21:00:00 +0100
 categories: [Guides, System Administration]
-tags: [linux, command-line]
+tags: [linux, command-line, lvm]
 ---
 
 When working with virtual machines, you'll often need to expand disk space as your storage requirements grow. Whilst increasing the virtual disk size in your hypervisor is straightforward, getting your Linux system to recognise and utilise the additional space requires several steps when using Logical Volume Manager (LVM). This guide provides a complete walkthrough for expanding an LVM volume without requiring a system reboot.
