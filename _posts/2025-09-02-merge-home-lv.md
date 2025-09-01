@@ -5,7 +5,7 @@ description: >-
 author: smcclennon
 date: 2025-09-02 00:00:00 +0100
 last_modified_at: 2025-09-02 00:00:00 +0100
-categories: [Solutions, System Administration]
+categories: [Guides, System Administration]
 tags: [lvm, linux, command-line]
 media_subpath: '/posts/20250902'
 image:
