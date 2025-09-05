@@ -224,9 +224,8 @@ exclude:
   - README.md
   - LICENSE
   - purgecss.js
-  - rollup.config.js
+  - "*.config.js"
   - "package*.json"
-  - "jekyll-garden"
 
 jekyll-archives:
   enabled: [categories, tags]
