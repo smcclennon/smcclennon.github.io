@@ -9,7 +9,7 @@ I'm Shiraz, a broadcast IT engineer 📡 by day and a systems administrator & cy
 
 ## What You'll Find
 
-A mix of practical guides, project write-ups, troubleshooting solutions, and reference materials covering broadcast engineering, networking, systems administration, and software development. Think of it as my digital workshop notes - the stuff I actually use and refer back to.
+A mix of practical guides, project write-ups, troubleshooting solutions, and reference materials covering broadcast engineering, networking, systems administration, and software development. Think of it as my digital workshop notes, the stuff I actually use and refer back to.
 
 ## How It's Organised
 
@@ -35,7 +35,7 @@ You can find me on [GitHub][github] where I share my open source work, connect w
 
 ## Technical Bits
 
-This site runs on Jekyll and works as a progressive web application - pages you visit get cached for offline reading (handy for reference materials). There's a comment system powered by Giscus if you want to discuss the technical content or share your own experiences.
+This site runs on Jekyll and works as a progressive web application. Pages you visit get cached for offline reading (handy for reference materials). There's also a comment system powered by Giscus if you want to discuss the technical content or share your own experiences.
 
 [categories]: /categories
 [guides]: /categories/guides
