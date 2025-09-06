@@ -4,7 +4,7 @@ description: >-
   How to install spotify-adblock on Fedora 42 using Local Package Factory (LPF) for an ad-free Spotify experience.
 author: smcclennon
 date: 2025-09-05 07:00:00 +0100
-last_modified_at: 2025-09-05 07:00:00 +0100
+last_modified_at: 2025-09-06 00:24:00 +0100
 categories: [Guides, System Administration]
 tags: [fedora, linux]
 media_subpath: '/posts/20250905'
@@ -13,7 +13,7 @@ image:
   alt: 'spotify-adblock log and config above the Spotify client'
 ---
 
-Block Spotify ads on Linux with a simple library injection. This guide shows how to install [spotify-adblock][spotify-adblock] with the official Spotify client via RPM on Fedora 42.
+Block Spotify ads whilst keeping the full official desktop client experience. This guide shows how to install [spotify-adblock][spotify-adblock] with the official Spotify client via RPM on Fedora 42.
 
 > **Educational Use**: This guide is for educational purposes. Consider supporting artists through Spotify Premium.
 {: .prompt-info }
@@ -48,22 +48,22 @@ spotify
 
 ## Detailed Explanation
 
-### Why LPF Over Alternative Methods
-
-Most distributions now package Spotify as Flatpaks or Snaps, which sandbox the application and make library modifications difficult. Installing via RPM gives us easy to inject our ad-blocking library into Spotify at runtimeusing `LD_PRELOAD`.
-
-[lpf-spotify-client][lpf-spotify-client] from RPM Fusion has superseded the [spotify-make][spotify-make] project (unmaintained since ~2015), providing:
-
-- **Automated updates**[^lpf-automated-updates] through standard package management
-- **Legal compliance** with Spotify's licensing requirements
-- **System integration** with proper desktop files and dependencies
-- **Active maintenance** allowing continued RPM builds for current Spotify releases
-
 ### The Core Components
 
-**spotify-adblock**: Uses `LD_PRELOAD` to intercept audio streams and skip advertisements by hooking into system calls before they reach audio output.
+**spotify-adblock**: Uses `LD_PRELOAD` to block advertisement requests by hooking DNS resolution (`getaddrinfo`) and HTTP requests (`cef_urlrequest_create`) using [allowlist/denylist patterns][spotify-adblock-config].
 
 **Local Package Factory (LPF)**: Fedora's solution for building packages from proprietary sources that cannot be redistributed directly due to licensing restrictions.
+
+### Why LPF Over Alternative Methods
+
+Most distributions package Spotify as sandboxed Flatpaks or Snaps, which run in isolated containers with restricted filesystem access. Installing Spotify as a native RPM package enables full access to system libraries by default, simplifying the process of injecting our ad-blocking library at runtime using `LD_PRELOAD`.
+
+Since Spotify doesn't distribute official RPMs, we use [lpf-spotify-client][lpf-spotify-client] to build them locally on your machine. This tool replaces the unmaintained [spotify-make][spotify-make] project and features:
+
+- **Local RPM building** of the official Spotify client
+- **System integration** with proper desktop files  
+- **Update management** through `lpf update`
+- **Active maintenance** from [RPM Fusion][rpm-fusion]
 
 ### Step 5 Breakdown
 
@@ -97,55 +97,67 @@ LD_LIBRARY_PATH=$( dirname $spotify ) LC_NUMERIC=en_US.utf8 $spotify $@
 LD_LIBRARY_PATH=$( dirname $spotify ) LC_NUMERIC=en_US.utf8 LD_PRELOAD=/usr/local/lib/spotify-adblock.so $spotify $@
 ```
 
-This tells the dynamic linker to load our custom library before Spotify's standard libraries, enabling ad interception.
+This tells the dynamic linker to load our ad-blocking library before Spotify's standard libraries, blocking ads whilst preserving all other client functionality.
 
-## Verification
+## Verification / Troubleshooting
 
-Test that everything works correctly:
+Test the installation:
 
 ```bash
-# Verify Spotify installation
-which spotify
-# Should return: /usr/bin/spotify
+# Verify components are in place
+which spotify                                    # Should return: /usr/bin/spotify
+ls -la /usr/local/lib/spotify-adblock.so        # Should show the library file
+cat /usr/bin/spotify | grep LD_PRELOAD          # Should show our modification
 
-# Check adblock library exists
-ls -la /usr/local/lib/spotify-adblock.so
-
-# Confirm LD_PRELOAD modification
-cat /usr/bin/spotify | grep LD_PRELOAD
-```
-
-## Troubleshooting Common Issues
-
-**Spotify Won't Launch**
-```bash
-# Launch via terminal and check for errors
-which spotify
-# Should return: /usr/bin/spotify
-
+# Test functionality
 spotify
-# Should return:
-# [*] Config file: /etc/spotify-adblock/config.toml
-# [+] cef_urlrequest_create: ...
 ```
 
-**Ads Still Playing**
+**Expected output when working:**
+```
+[*] Config file: /etc/spotify-adblock/config.toml
+[+] cef_urlrequest_create: ...
+```
+
+**If ads still play:**
 - Restart Spotify completely
-- Verify the LD_PRELOAD modification was applied correctly
+- Check the LD_PRELOAD modification is present
 
-## Maintenance
+## Configuration Options
 
-### Updating Components
+Advanced users can customise filtering behaviour in [`/etc/spotify-adblock/config.toml`][spotify-adblock-config]:
 
-**Update spotify-adblock:**
+```toml
+# Allow these domains/URLs (regex patterns)
+allowlist = [
+    'localhost',
+    'audio-sp-.*\.pscdn\.co',  # audio streams
+    'api\.spotify\.com',       # client APIs
+    # ... more patterns
+]
+
+# Block these domains/URLs (regex patterns)  
+denylist = [
+    'https://spclient\.wg\.spotify\.com/ads/.*',        # ads
+    'https://spclient\.wg\.spotify\.com/ad-logic/.*',   # ads
+    'https://spclient\.wg\.spotify\.com/gabo-receiver-service/.*', # tracking
+]
+```
+
+## Updating Components
+
+### Updating spotify-adblock
 
 ```bash
+# Update spotify-adblock source code
 cd spotify-adblock
 git pull
+
+# Build and install the latest version
 make clean && make && sudo make install
 ```
 
-**Update Spotify:**
+### Updating Spotify
 
 ```bash
 # Update lpf and lpf-spotify-client
@@ -156,20 +168,6 @@ lpf update
 
 # Reapply LD_PRELOAD modification to Spotify launcher script
 sudo sed -i 's|LD_LIBRARY_PATH=\$( dirname \$spotify ) LC_NUMERIC=en_US.utf8 \$spotify \$@|LD_LIBRARY_PATH=$( dirname $spotify ) LC_NUMERIC=en_US.utf8 LD_PRELOAD=/usr/local/lib/spotify-adblock.so $spotify $@|' /usr/bin/spotify
-```
-
-
-> **Important**: LPF updates may overwrite the `/usr/bin/spotify` script. Reapply the LD_PRELOAD modification after Spotify updates.
-{: .prompt-warning }
-
-### Configuration Options
-
-Advanced users can customise filtering behaviour in `/etc/spotify-adblock/config.toml`:
-
-```toml
-allowlist = []
-
-denylist = []
 ```
 
 ## Understanding the Legal Context
@@ -183,22 +181,24 @@ The LPF approach ensures compliance with distribution restrictions whilst provid
 
 ## Conclusion
 
-This setup provides ad-free Spotify playback whilst maintaining proper system integration through Fedora's package management. The combination of LPF and spotify-adblock offers a maintainable solution that respects both licensing requirements and user preferences.
+This setup provides ad-free Spotify playback whilst maintaining the full feature set of the official desktop client.
 
 > Remember: Supporting artists through streaming royalties, merchandise, or concert attendance helps sustain the music ecosystem.
 {: .prompt-info }
 
 ## References
 
-- [spotify-adblock GitHub Repository][spotify-adblock]
+- [spotify-adblock][spotify-adblock]
 - [RPM Fusion LPF Spotify Client][lpf-spotify-client]
-
-[spotify-adblock]: https://github.com/abba23/spotify-adblock
-[spotify-make]: https://github.com/leamas/spotify-make
-[lpf-spotify-client]: https://github.com/rpmfusion/lpf-spotify-client
-[lpf-eula]: https://github.com/rpmfusion/lpf-spotify-client/blob/master/eula.txt
 
 ## Footnotes
 
 [^lpf-automated-updates]: Manual spotify-client rebuild is required via `lpf update` to apply updates.
 [^spotify-bin]: `/usr/bin/spotify` is a launcher script that calls the actual Spotify binary.
+
+[spotify-adblock]: https://github.com/abba23/spotify-adblock
+[spotify-adblock-config]: https://github.com/abba23/spotify-adblock/blob/master/config.toml
+[spotify-make]: https://github.com/leamas/spotify-make
+[lpf-spotify-client]: https://github.com/rpmfusion/lpf-spotify-client
+[lpf-eula]: https://github.com/rpmfusion/lpf-spotify-client/blob/master/eula.txt
+[rpm-fusion]: https://rpmfusion.org/

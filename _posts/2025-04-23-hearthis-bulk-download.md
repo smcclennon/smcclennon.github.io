@@ -4,10 +4,14 @@ description: >-
   Learn how to efficiently bulk download music tracks, mixes, and podcasts from Hearthis.at using a simple browser script.
 author: smcclennon
 date: 2025-04-23 00:02:00 +0000
-last_modified_at: 2025-04-23 00:02:00 +0000
+last_modified_at: 2025-09-06 01:26:00 +0100
 categories: [Guides, Web Tools]
 tags: [javascript, automation, web-scraping]
 media_subpath: '/posts/20250423'
+image:
+  path: downlods-brave.png
+  alt: 'Downloads list in Brave browser'
+pin: true
 ---
 
 Looking to download your favourite DJ's entire mix collection or archive a podcast series for offline listening? This guide will show you how to efficiently download content from [Hearthis.at][hearthis] in just a few clicks.
@@ -84,17 +88,22 @@ This guide will be particularly useful for:
 
    // Click all download links
    for (var i = 0; i < dl_elements.length; i++) {dl_elements[i].click();}
+   console.log(`Requested ${dl_elements.length} downloads`)
    ```
 
-   > This script may stop working if Hearthis.at changes their site design. Last tested: April 2025.
+   > This script may stop working if Hearthis.at changes their site design. Last tested: September 2025.
    {: .prompt-warning }
 
+5. **Handle Popup Blocking**
 
+   If downloads don't start, check for popup blocking notifications in your browser:
    
-   > If nothing happens, check for a popup blocking notification in your browser.
    ![Browser popup blocking notification](prevented-pop-up.png)
-   *Example of a browser blocking downloads as popups*
-   {: .prompt-warning }
+   *Firefox blocking downloads as popups*
+
+   ![Browser popup blocking notification](prevented-pop-up-brave.png)
+   *Brave blocking downloads as popups*
+
 
 ## Important Considerations
 
