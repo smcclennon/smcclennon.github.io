@@ -1,10 +1,10 @@
 ---
 title: How to fix Sony WH-1000XM4 high-pitched noise/feedback
 description: >-
-  Learn how to fix the high-pitched noise/feedback in Sony WH-1000XM4 headphones.
+  Fix high-pitched whine and feedback in Sony WH-1000XM4 headphones caused by contaminated ANC microphones. Step-by-step repair guide using isopropyl alcohol cleaning method.
 author: smcclennon
 date: 2025-10-19 08:24:00 +0100
-last_modified_at: 2025-10-19 09:09:00 +0100
+last_modified_at: 2025-10-19 22:50:00 +0100
 categories: [Guides, Electronics]
 tags: [repair, hardware]
 media_subpath: '/posts/20251019'
@@ -25,7 +25,7 @@ My first pair of headphones were the [cheapest NoFear cans SportsDirect had to o
 Eventually after a lot of saving and a lot of research, I bought what at the time were considered the best active noise cancelling headphones on the market, the Sony WH-1000XM4, for my unreasonably long commute to school.
 
 ![](headphones.webp)
-*Sony WH-1000XMR headphones*
+*Sony WH-1000XM4 headphones*
 
 I've had these headphones for 5 years now and they've been absolutely flawless. 
 
@@ -41,15 +41,15 @@ The left earcup has a proximity sensor for pausing the music when you're not wea
 
 In my research I was disappointed to find that there was not one single solution everyone has agreed works universally. Eventually, I took the plunge and tried the isopropyl alcohol (aka isopropanol) bath method, or I should say, my headphones took the plunge :)
 
-It worked! And fortunately for you, my right earcup suffered the same fate a few months later, the repair process for which I have documented step by stepbelow.
+It worked! And fortunately for you, my right earcup suffered the same fate a few months later, the repair process for which I have documented step by step below.
 
 ## Solution
 
 ### What you'll need
-- Isopropyl alcohol 99% purity
+- Isopropyl alcohol ≥99% purity
 - Small bowl
 - Butter knife or plastic prying tool
-- Small flathead screw driver (or similar) for unclipping the ANC microphone cover
+- Small flathead screwdriver (or similar) for unclipping the ANC microphone cover
 
 > This repair involves disassembling your headphones and could void your warranty. Proceed at your own risk.
 {: .prompt-warning }
@@ -60,8 +60,8 @@ It worked! And fortunately for you, my right earcup suffered the same fate a few
   *Right earcup removed*
 2. **Access the driver** - Remove the foam covering the driver
   ![](right-anc-cover.webp)
-  *Right earcup foam covering the driver removed*
-3. **Locate the ANC microphone** - Carefully remove the rubber cover over the internal ANC microphone just above the driver. Be careful if using a screw driver as the magnetic speaker driver will attract any ferrous metal and can be easily pierced
+  *Right foam covering the driver removed*
+3. **Locate the ANC microphone** - Carefully remove the rubber cover over the internal ANC microphone just above the driver. Be careful if using a screwdriver as the magnetic speaker driver will attract any ferrous metal and can be easily pierced
   ![](right-anc.webp)
   *Right ANC microphone cover removed*
 4. **Free the microphone** - Unclip the ANC microphone from the earcup, as well as the ANC microphone cable from its cable management
