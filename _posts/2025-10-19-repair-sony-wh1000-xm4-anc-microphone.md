@@ -4,7 +4,7 @@ description: >-
   Learn how to fix the high-pitched noise/feedback in Sony WH-1000XM4 headphones.
 author: smcclennon
 date: 2025-10-19 08:24:00 +0100
-last_modified_at: 2025-10-19 08:24:00 +0100
+last_modified_at: 2025-10-19 09:09:00 +0100
 categories: [Guides, Electronics]
 tags: [repair, hardware]
 media_subpath: '/posts/20251019'
@@ -27,21 +27,21 @@ Eventually after a lot of saving and a lot of research, I bought what at the tim
 ![](headphones.webp)
 *Sony WH-1000XMR headphones*
 
-I've had these headphones for 7 years now and they've been absolutely flawless. 
+I've had these headphones for 5 years now and they've been absolutely flawless. 
 
 Until recently.
 
 ### The problem
 
-One day I put on the headphones and heard a strange distant whine in the left earcup. At first I thought nothing of it, but over the coming days the noise got louder and louder, to the point where the left earcup was screaming a constant tone when worn.
+One day I put on the headphones and heard a strange distant whine from the left earcup. At first I thought nothing of it, but over the coming days the noise became louder and louder, to the point where the left earcup was screaming a constant tone when worn.
 
 I tried rebooting the headphones, performing Active Noise Cancellation (ANC) altitude calibration, cleaning the earcups, but only two things seemed to have an impact. Disabling ANC/passthrough, or moving my ear away from the earcup. Yes, specifically my ear.
 
-The left earcup has a proximity sensor for pausing the music when you're not wearing the headphones, but this can be easily fooled by placing a finger over the sensor. Doing so, I would move the earcup towards my cheek, place my hand inside, and no high pitched noise. But ears seemed to be the trigger. Either ear, flipping the headphones around to wear them the wrong way around like a psycho had the same impact.
+The left earcup has a proximity sensor for pausing the music when you're not wearing the headphones, but this can be easily fooled by placing a finger over the sensor. Doing so, I would move the earcup towards my cheek or place my hand inside the earcup, but this wouldn't reproduce the high pitched noise. Specifically my ears seemed to be the trigger. Either ear, flipping the headphones around to wear them the wrong way around like a psycho had the same impact.
 
-In my research I was disappointed to find that there was not one single solution everyone has agreed worked universally. Eventually I took the plunge and tried the isopropyl alcohol (aka isopropanol) bath method, or I should say, my headphones took the plunge :)
+In my research I was disappointed to find that there was not one single solution everyone has agreed works universally. Eventually, I took the plunge and tried the isopropyl alcohol (aka isopropanol) bath method, or I should say, my headphones took the plunge :)
 
-It worked! And fortunately for you, my right earcup suffered the same fate a few months later, the repair process for which I have documented below.
+It worked! And fortunately for you, my right earcup suffered the same fate a few months later, the repair process for which I have documented step by stepbelow.
 
 ## Solution
 
@@ -61,7 +61,7 @@ It worked! And fortunately for you, my right earcup suffered the same fate a few
 2. **Access the driver** - Remove the foam covering the driver
   ![](right-anc-cover.webp)
   *Right earcup foam covering the driver removed*
-3. **Locate the ANC microphone** - Carefully remove the rubber cover over the internal ANC microphone just above the driver. Be careful if using a screwdriver as the magnetic driver will attract any ferrous metal and can be easily pierced
+3. **Locate the ANC microphone** - Carefully remove the rubber cover over the internal ANC microphone just above the driver. Be careful if using a screw driver as the magnetic speaker driver will attract any ferrous metal and can be easily pierced
   ![](right-anc.webp)
   *Right ANC microphone cover removed*
 4. **Free the microphone** - Unclip the ANC microphone from the earcup, as well as the ANC microphone cable from its cable management
@@ -73,18 +73,18 @@ It worked! And fortunately for you, my right earcup suffered the same fate a few
   *Right ANC microphone in isopropyl alcohol bath*
 7. **Partially air dry** - Allow the microphone to partially air dry for 24 hours before reassembling
 8. **Reassemble** - Reverse the disassembly process, ensuring all clips are secure
-9. **Fully air dry** - You will need to wait for the ANC microphone to air dry for 5+ days before enjoying Active Noise Cancellation or Transparency mode again. It's quite easy to tell when the microphone hasn't fully dried as with ANC/Transparency enabled, it'll sound like you're in a wind tunnel.
+9. **Fully air dry** - You will need to wait for the ANC microphone to air dry for 5+ days before enjoying Active Noise Cancellation or Transparency mode again. It's quite easy to tell when the microphone hasn't fully dried as when ANC/Transparency is enabled, it'll sound like you're in a wind tunnel.
 
 You can still use the headphones whilst waiting for the microphone to fully dry, simply toggle past ANC and Transparency mode and the windy noise will disappear. Once fully dried, ANC/Transparency mode will work like new again. No high pitched noise! No wind tunnel! Hallelujah!! 🎉
 
 ### Alternative solution
-If this doesn't work, you can try replacing the microphone entirely. I believe it is a [ROM-2235L-HD-R](https://www.digikey.co.uk/en/products/detail/pui-audio-inc/ROM-2235L-HD-R/7898331) from PUI Audio Inc. If you try this let me know how it goes!
+If this doesn't work, you can try replacing the microphone entirely. I believe it is the [ROM-2235L-HD-R](https://www.digikey.co.uk/en/products/detail/pui-audio-inc/ROM-2235L-HD-R/7898331) from PUI Audio Inc. If you try this let me know how it goes!
 
 ## Hypothesis
 
 My hypothesis is that the high-pitched whine in either earcup is due to feedback between the ANC microphone and the speaker driver. Whilst feedback is necessary for ANC to work, the headphones are tuned to process the expected output behaviour of the microphone.
 
-Over time, the ANC microphones may become contaminated and therefore no longer produce the expected output for a given frequency played by the driver. The real answer is likely much more complicated than this due to the problem only occurring, in my experience most unfortunately, when an ear was present.
+Over time, the ANC microphones may become contaminated and therefore no longer produce the expected output for a given frequency played by the driver. The real answer is likely much more complicated than this due to the problem only occurring, in my experience (most unfortunately), when my ear was present.
 
 ## Conclusion
 
