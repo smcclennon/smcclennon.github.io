@@ -4,7 +4,7 @@ description: >-
    List of essential acronyms to help navigate the overwhelming terminology in the broadcast engineering field.
 author: smcclennon
 date: 2023-08-14 09:16:00 +0000
-last_modified_at: 2025-04-19 19:30:00 +0000
+last_modified_at: 2025-10-19 21:25:00 +0100
 categories: [Reference, Broadcast Engineering]
 tags: []
 ---
@@ -25,9 +25,11 @@ tags: []
 | IBC | International Broadcasting Convention | September trade show in Amsterdam attracting 37,000 attendees |
 | ISDN | Integrated Services Digital Network | A set of communication standards for simultaneous digital transmission of voice, video, data, and other network services over the traditional circuits of the public switched telephone network |
 | [LC][lc] | Little Connector | Small high-density square fibre optic connector. Two can fit into one duplex SFP |
+| MAD | MediArchive | EVS MAD |
 | MCR | Master Control Room | AKA Lines Control Room (LCR) |
 | NAB | National Association of Broadcasters | Spring trade show in Las Vegas attracting 100,000 attendees |
 | [NMOS][nmos] | Networked Media Open Specifications | A set of standards for interoperability of media devices and systems over IP networks in broadcast and media production, providing guidelines for device discovery, control, and data transport for seamless integration |
+| OBC | On-Board Camera | Camera mounted on a vehicle, boat, aircraft, or other mobile platform |
 | OCP | Operation Control Panel | Grass Valley's acronym for RCP |
 | PCR | Production Control Room |  |
 | RCP | Remote Control Panel | Panel which controls camera lens/paint etc via a connection to the camera or its CCU. Acronym used by Sony, Hitachi and Wikipedia |
