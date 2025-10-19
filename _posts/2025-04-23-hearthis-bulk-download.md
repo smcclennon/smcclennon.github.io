@@ -4,7 +4,7 @@ description: >-
   Learn how to efficiently bulk download music tracks, mixes, and podcasts from Hearthis.at using a simple browser script.
 author: smcclennon
 date: 2025-04-23 00:02:00 +0000
-last_modified_at: 2025-09-06 01:26:00 +0100
+last_modified_at: 2025-10-19 06:55:00 +0100
 categories: [Guides, Web Tools]
 tags: [javascript, automation, web-scraping]
 media_subpath: '/posts/20250423'
@@ -25,6 +25,9 @@ Looking to download your favourite DJ's entire mix collection or archive a podca
 
 Unlike Spotify, Apple Music, and other major streaming services that typically restrict downloading[^drm_restriction], Hearthis.at takes a more open approach by allowing creators to enable direct downloads of their work. This creator-friendly policy makes it an important platform in the electronic music community and for content creators who want more control over how their work is distributed.
 
+> Unlike services with DRM[^drm_restriction], Hearthis.at allows truly unrestricted downloads of enabled tracks. You own the file.
+{: .prompt-tip }
+
 ## Why Bulk Download from Hearthis.at?
 
 Hearthis.at already offers a download feature for tracks that creators have made available for download. However, this native functionality only allows you to download one track at a time. This becomes incredibly tedious if you're trying to:
@@ -35,20 +38,7 @@ Hearthis.at already offers a download feature for tracks that creators have made
 - Save a curated playlist for offline listening while travelling
 - Create a collection of reference tracks for research or DJ sets
 
-> Unlike services with DRM[^drm_restriction], Hearthis.at allows truly unrestricted downloads of enabled tracks. You own the file.
-{: .prompt-tip }
-
 The bulk download method we'll be exploring simply automates what you could do manually by clicking each download button, saving you considerable time and effort.
-
-## Who This Guide Is For
-
-This guide will be particularly useful for:
-
-- Music enthusiasts who want to archive collections from favourite artists
-- Podcast listeners looking to download series for offline consumption
-- Researchers collecting audio content for academic purposes
-- DJs creating personal archives of inspiration material
-- Content creators backing up their own uploaded material
 
 > Always follow Hearthis.at's [Terms of Service][hearthis_tos][^hearthis_tos] when using this method.
 {: .prompt-danger }
