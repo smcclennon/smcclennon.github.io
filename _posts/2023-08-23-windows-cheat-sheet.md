@@ -4,7 +4,7 @@ description: >-
   A quick reference for Windows tools and commands used for troubleshooting and system management.
 author: smcclennon
 date: 2023-08-23 13:43:00 +0000
-last_modified_at: 2025-10-19 21:57:00 +0100
+last_modified_at: 2025-10-19 22:43:00 +0100
 categories: [Reference, System Administration]
 tags: [windows, command-line]
 ---
@@ -47,13 +47,14 @@ Command-line tools which can be run from Command Prompt or PowerShell. Launch Co
 
 ## PowerShell
 
-Command-line tools which are only supported by PowerShell. Launch PowerShell via Run (`Win`+`R` then type `cmd`).
+Command-line tools which are only supported by PowerShell. Launch PowerShell via Run (`Win`+`R` then type `powershell`).
 
 
 | Command                                                              | Purpose                                                  |
 | -------------------------------------------------------------------- | -------------------------------------------------------- |
 | `Get-SmbConnection`                                                  | List SMB network shares more reliably than via `net use` |
 | `(New-Object -com "WMPlayer.OCX.7").cdromcollection.item(0).eject()` | Eject optical disc tray. Easily locate a computer in a server room                                  |
+| `Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name LongPathsEnabled -Type DWord -Value 1` | Enable long paths on Windows 10/11 |
 
 > For more Windows command line utilities, see [Windows & POSIX CLI Reference](/posts/windows-posix-cli/)
 {:.prompt-info}
