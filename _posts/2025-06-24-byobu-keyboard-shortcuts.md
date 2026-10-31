@@ -6,7 +6,7 @@ author: smcclennon
 date: 2025-06-24 04:17:00 +0100
 last_modified_at: 2025-06-24 04:17:00 +0100
 categories: [Reference, System Administration]
-tags: [terminal, keyboard-shortcuts]
+tags: [linux, command-line, keyboard-shortcuts]
 media_subpath: '/posts/20250624'
 image:
   path: 'byobu-split.png'

@@ -6,7 +6,7 @@ author: smcclennon
 date: 2025-04-23 00:02:00 +0000
 last_modified_at: 2025-10-19 06:55:00 +0100
 categories: [Guides, Web Tools]
-tags: [javascript, automation, web-scraping]
+tags: [javascript, automation]
 media_subpath: '/posts/20250423'
 image:
   path: downlods-brave.png
