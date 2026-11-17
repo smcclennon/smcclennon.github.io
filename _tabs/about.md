@@ -5,7 +5,7 @@ order: 4
 title: Hello there 👋
 ---
 
-I'm Shiraz, a broadcast IT engineer 📡 by day and a systems administrator & cybersecurity enthusiast by night <i class="fa-solid fa-moon"></i> This site is where I document the interesting projects I work on, share solutions to tricky problems, and collect technical resources that I've found genuinely useful.
+I'm Shiraz, a site reliability engineer 📡 by day and a systems administrator & cybersecurity enthusiast by night <i class="fa-solid fa-moon"></i> This site is where I document the interesting projects I work on, share solutions to tricky problems, and collect technical resources that I've found genuinely useful.
 
 ## What You'll Find
 
